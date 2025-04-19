@@ -1,0 +1,7 @@
+Running: xsim.dir/serin_parout_sim_behav/xsimk.exe -simmode gui -wdb serin_parout_sim_behav.wdb -simrunnum 0 -socket 6520
+Design successfully loaded
+Design Loading Memory Usage: 9916 KB (Peak: 9916 KB)
+Design Loading CPU Usage: 0 ms
+Simulation completed
+Simulation Memory Usage: 10532 KB (Peak: 10532 KB)
+Simulation CPU Usage: 30 ms

@@ -1,0 +1,4 @@
+Time resolution is 1 ps
+Failure: test finished!
+Time: 819500 ns  Iteration: 0  Process: /s_mult_sim/stim_proc  File: D:/fpga/kitap1b/38_s_mult/38_s_mult.srcs/sim_1/new/s_mult_sim.vhd
+$finish called at time : 819500 ns : File "D:/fpga/kitap1b/38_s_mult/38_s_mult.srcs/sim_1/new/s_mult_sim.vhd" Line 95

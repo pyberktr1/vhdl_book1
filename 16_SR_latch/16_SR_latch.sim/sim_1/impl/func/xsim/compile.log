@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/fpga/kitap1b/16_SR_latch/16_SR_latch.sim/sim_1/impl/func/xsim/SR_latch_sim_func_impl.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'SR_latch'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/fpga/kitap1b/16_SR_latch/16_SR_latch.srcs/sim_1/new/SR_latch_sim.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'SR_latch_sim'

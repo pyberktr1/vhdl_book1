@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"SR_latch_sim_func_impl.vhd" \
+"../../../../../16_SR_latch.srcs/sim_1/new/SR_latch_sim.vhd" \
+
+# Do not sort compile order
+nosort

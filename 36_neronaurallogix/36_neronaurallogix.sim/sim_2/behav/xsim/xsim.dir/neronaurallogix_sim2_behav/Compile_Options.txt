@@ -1,0 +1,1 @@
+--incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" --snapshot "neronaurallogix_sim2_behav" "xil_defaultlib.neronaurallogix_sim2" -log "elaborate.log" 

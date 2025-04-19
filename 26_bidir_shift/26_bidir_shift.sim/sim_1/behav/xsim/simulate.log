@@ -1,0 +1,7 @@
+Time resolution is 1 ps
+Failure: test finished!
+Time: 210 ns  Iteration: 0  Process: /bidir_shift_sim/stim_proc  File: D:/fpga/kitap1b/26_bidir_shift/26_bidir_shift.srcs/sim_1/new/bidir_shift_sim.vhd
+$finish called at time : 210 ns : File "D:/fpga/kitap1b/26_bidir_shift/26_bidir_shift.srcs/sim_1/new/bidir_shift_sim.vhd" Line 91
+Failure: test finished!
+Time: 210 ns  Iteration: 0  Process: /bidir_shift_sim/stim_proc  File: D:/fpga/kitap1b/26_bidir_shift/26_bidir_shift.srcs/sim_1/new/bidir_shift_sim.vhd
+$finish called at time : 210 ns : File "D:/fpga/kitap1b/26_bidir_shift/26_bidir_shift.srcs/sim_1/new/bidir_shift_sim.vhd" Line 91

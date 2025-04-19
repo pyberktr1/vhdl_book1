@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../21_oneshot.srcs/sources_1/new/oneshot.vhd" \
+"../../../../21_oneshot.srcs/sim_1/new/oneshot_sim.vhd" \
+
+# Do not sort compile order
+nosort

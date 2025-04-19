@@ -1,0 +1,9 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../7_andor.srcs/sources_1/new/and_gate.vhd" \
+"../../../../7_andor.srcs/sources_1/new/andor.vhd" \
+"../../../../7_andor.srcs/sources_1/new/or_gate.vhd" \
+"../../../../7_andor.srcs/sim_1/new/andor_sim.vhd" \
+
+# Do not sort compile order
+nosort

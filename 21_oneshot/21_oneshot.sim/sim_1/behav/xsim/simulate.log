@@ -1,0 +1,7 @@
+Time resolution is 1 ps
+Failure: test finished!
+Time: 1400 ns  Iteration: 0  Process: /oneshot_sim/stim_proc  File: D:/fpga/kitap1b/21_oneshot/21_oneshot.srcs/sim_1/new/oneshot_sim.vhd
+$finish called at time : 1400 ns : File "D:/fpga/kitap1b/21_oneshot/21_oneshot.srcs/sim_1/new/oneshot_sim.vhd" Line 79
+Failure: test finished!
+Time: 1400 ns  Iteration: 0  Process: /oneshot_sim/stim_proc  File: D:/fpga/kitap1b/21_oneshot/21_oneshot.srcs/sim_1/new/oneshot_sim.vhd
+$finish called at time : 1400 ns : File "D:/fpga/kitap1b/21_oneshot/21_oneshot.srcs/sim_1/new/oneshot_sim.vhd" Line 79

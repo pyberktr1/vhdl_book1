@@ -1,0 +1,7 @@
+Time resolution is 1 ps
+Failure: test finished!
+Time: 400 ns  Iteration: 0  Process: /serin_parout_sim/stim_proc  File: D:/fpga/kitap1b/23_serin_parout/23_serin_parout.srcs/sim_1/new/serin_parout_sim.vhd
+$finish called at time : 400 ns : File "D:/fpga/kitap1b/23_serin_parout/23_serin_parout.srcs/sim_1/new/serin_parout_sim.vhd" Line 82
+Failure: test finished!
+Time: 400 ns  Iteration: 0  Process: /serin_parout_sim/stim_proc  File: D:/fpga/kitap1b/23_serin_parout/23_serin_parout.srcs/sim_1/new/serin_parout_sim.vhd
+$finish called at time : 400 ns : File "D:/fpga/kitap1b/23_serin_parout/23_serin_parout.srcs/sim_1/new/serin_parout_sim.vhd" Line 82

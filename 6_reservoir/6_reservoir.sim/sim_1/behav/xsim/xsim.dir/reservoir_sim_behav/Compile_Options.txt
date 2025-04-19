@@ -1,0 +1,1 @@
+--incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" --snapshot "reservoir_sim_behav" "xil_defaultlib.reservoir_sim" -log "elaborate.log" 

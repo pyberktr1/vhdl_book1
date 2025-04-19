@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="s_mult_sim_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="s_mult_sim" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="818,890.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="819,622.001 ns"></ZoomEndTime>
+      <Cursor1Time time="819,500.000 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="188"></NameColumnWidth>
+      <ValueColumnWidth column_width="102"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="9" />
+   <wvobject fp_name="/s_mult_sim/m1" type="array">
+      <obj_property name="ElementShortName">m1[7:0]</obj_property>
+      <obj_property name="ObjectShortName">m1[7:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/s_mult_sim/m2" type="array">
+      <obj_property name="ElementShortName">m2[4:0]</obj_property>
+      <obj_property name="ObjectShortName">m2[4:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/s_mult_sim/uut/in1" type="array">
+      <obj_property name="ElementShortName">in1[7:0]</obj_property>
+      <obj_property name="ObjectShortName">in1[7:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/s_mult_sim/uut/in2" type="array">
+      <obj_property name="ElementShortName">in2[4:0]</obj_property>
+      <obj_property name="ObjectShortName">in2[4:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/s_mult_sim/uut/mult" type="array">
+      <obj_property name="ElementShortName">mult[12:0]</obj_property>
+      <obj_property name="ObjectShortName">mult[12:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/s_mult_sim/reset" type="logic">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/s_mult_sim/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/s_mult_sim/output" type="array">
+      <obj_property name="ElementShortName">output[7:0]</obj_property>
+      <obj_property name="ObjectShortName">output[7:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/s_mult_sim/clk_period" type="other">
+      <obj_property name="ElementShortName">clk_period</obj_property>
+      <obj_property name="ObjectShortName">clk_period</obj_property>
+   </wvobject>
+</wave_config>

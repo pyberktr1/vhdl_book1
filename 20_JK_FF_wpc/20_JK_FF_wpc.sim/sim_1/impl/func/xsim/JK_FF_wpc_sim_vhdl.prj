@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"JK_FF_wpc_sim_func_impl.vhd" \
+"../../../../../20_JK_FF_wpc.srcs/sim_1/new/JK_FF_wpc_sim.vhd" \
+
+# Do not sort compile order
+nosort

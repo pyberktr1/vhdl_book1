@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../6_reservoir.srcs/sources_1/new/reservoir.vhd" \
+"../../../../6_reservoir.srcs/sim_1/new/reservoir_sim.vhd" \
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,7 @@
+Time resolution is 1 ps
+Failure: test finished!
+Time: 1 us  Iteration: 0  Process: /reservoir_sim/stim_proc  File: D:/fpga/kitap1b/6_reservoir/6_reservoir.srcs/sim_1/new/reservoir_sim.vhd
+$finish called at time : 1 us : File "D:/fpga/kitap1b/6_reservoir/6_reservoir.srcs/sim_1/new/reservoir_sim.vhd" Line 57
+Failure: test finished!
+Time: 1 us  Iteration: 0  Process: /reservoir_sim/stim_proc  File: D:/fpga/kitap1b/6_reservoir/6_reservoir.srcs/sim_1/new/reservoir_sim.vhd
+$finish called at time : 1 us : File "D:/fpga/kitap1b/6_reservoir/6_reservoir.srcs/sim_1/new/reservoir_sim.vhd" Line 57

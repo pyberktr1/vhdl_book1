@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="nenet_sim_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="nenet_sim" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="1,186.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="2,927.001 ns"></ZoomEndTime>
+      <Cursor1Time time="1,450.000 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="167"></NameColumnWidth>
+      <ValueColumnWidth column_width="102"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="9" />
+   <wvobject fp_name="/nenet_sim/ldata" type="array">
+      <obj_property name="ElementShortName">ldata[3:0]</obj_property>
+      <obj_property name="ObjectShortName">ldata[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/nenet_sim/laddr" type="array">
+      <obj_property name="ElementShortName">laddr[3:0]</obj_property>
+      <obj_property name="ObjectShortName">laddr[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/nenet_sim/mode" type="array">
+      <obj_property name="ElementShortName">mode[1:0]</obj_property>
+      <obj_property name="ObjectShortName">mode[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/nenet_sim/reset" type="logic">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/nenet_sim/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/nenet_sim/uut/q" type="array">
+      <obj_property name="ElementShortName">q[0:2,0:3][3:0]</obj_property>
+      <obj_property name="ObjectShortName">q[0:2,0:3][3:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+   <wvobject fp_name="/nenet_sim/output" type="array">
+      <obj_property name="ElementShortName">output[3:0]</obj_property>
+      <obj_property name="ObjectShortName">output[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/nenet_sim/ndata" type="array">
+      <obj_property name="ElementShortName">ndata[0:11][3:0]</obj_property>
+      <obj_property name="ObjectShortName">ndata[0:11][3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/nenet_sim/clk_period" type="other">
+      <obj_property name="ElementShortName">clk_period</obj_property>
+      <obj_property name="ObjectShortName">clk_period</obj_property>
+   </wvobject>
+</wave_config>

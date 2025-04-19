@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"dec2bcd_sim_func_impl.vhd" \
+"../../../../../13_dec2bcd.srcs/sim_1/new/dec2bcd_sim.vhd" \
+
+# Do not sort compile order
+nosort

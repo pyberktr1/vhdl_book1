@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1744016695">
+  <File Type="ROUTE-PWR" Name="echo_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="echo.tcl"/>
+  <File Type="ROUTE-PWR-SUM" Name="echo_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="echo_reports.tcl"/>
+  <File Type="BITSTR-MSK" Name="echo.msk"/>
+  <File Type="ROUTE-CLK" Name="echo_clock_utilization_routed.rpt"/>
+  <File Type="RDI-RDI" Name="echo.vdi"/>
+  <File Type="BG-BIT" Name="echo.bit"/>
+  <File Type="BG-DRC" Name="echo.drc"/>
+  <File Type="BG-BGN" Name="echo.bgn"/>
+  <File Type="BG-BIN" Name="echo.bin"/>
+  <File Type="BITSTR-RBT" Name="echo.rbt"/>
+  <File Type="BITSTR-NKY" Name="echo.nky"/>
+  <File Type="BITSTR-BMM" Name="echo_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="echo.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="echo_methodology_drc_routed.rpt"/>
+  <File Type="BITSTR-SYSDEF" Name="echo.sysdef"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="echo.ltx"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="OPT-DRC" Name="echo_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="echo.hwdef"/>
+  <File Type="PLACE-IO" Name="echo_io_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="echo_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="echo_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="echo_control_sets_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="echo_incremental_reuse_pre_placed.rpt"/>
+  <File Type="ROUTE-DRC" Name="echo_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="echo_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="echo_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="echo_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="echo_route_status.pb"/>
+  <File Type="ROUTE-DCP" Name="echo_routed.dcp"/>
+  <File Type="ROUTE-ERROR-DCP" Name="echo_routed_error.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="echo_routed_bb.dcp"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="echo_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="echo_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="echo_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-BUS-SKEW" Name="echo_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="echo_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="echo_bus_skew_routed.rpx"/>
+  <File Type="OPT-DCP" Name="echo_opt.dcp"/>
+  <File Type="PLACE-DCP" Name="echo_placed.dcp"/>
+  <File Type="PWROPT-DCP" Name="echo_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="echo_postplace_pwropt.dcp"/>
+  <File Type="PHYSOPT-DCP" Name="echo_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="echo_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="echo_postroute_physopt_bb.dcp"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="echo_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="echo_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="echo_methodology_drc_routed.rpx"/>
+  <File Type="PDI-FILE" Name="echo.pdi"/>
+  <File Type="RCFI_FILE" Name="echo.rcfi"/>
+  <File Type="CFI_FILE" Name="echo.cfi"/>
+  <File Type="RNPI_FILE" Name="echo.rnpi"/>
+  <File Type="NPI_FILE" Name="echo.npi"/>
+  <File Type="RBD_FILE" Name="echo.rbd"/>
+  <File Type="ROUTE-RQS" Name="echo_routed.rqs"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS" Name="echo_postroute_physopted.rqs"/>
+  <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS-RPT" Name="postroute_physopt_report_qor_suggestions_0.rpt"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/adder.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/delay.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/delayline.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/gain.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/echo.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="echo"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/kitap1b/Cmod-A7-Master.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Cmod-A7-Master.xdc"/>
+        <Attr Name="ImportTime" Val="1628606177"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/imports/kitap1b/Cmod-A7-Master.xdc"/>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <File Path="$PSRCDIR/utils_1/imports/synth_1/echo.dcp">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedInSteps" Val="synth_1"/>
+        <Attr Name="AutoDcp" Val="1"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2022"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+    <Step Id="write_device_image"/>
+  </Strategy>
+</GenRun>

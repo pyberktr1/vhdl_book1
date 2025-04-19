@@ -1,0 +1,5 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/fpga/kitap1b/13_dec2bcd/13_dec2bcd.sim/sim_1/impl/timing/xsim/dec2bcd_sim_time_impl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dec2bcd
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/fpga/kitap1b/13_dec2bcd/13_dec2bcd.srcs/sim_1/new/dec2bcd_sim.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'dec2bcd_sim'

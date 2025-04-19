@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../34_codelock.srcs/sources_1/new/codelock.vhd" \
+"../../../../34_codelock.srcs/sim_1/new/codelock_sim.vhd" \
+
+# Do not sort compile order
+nosort

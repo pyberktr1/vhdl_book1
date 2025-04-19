@@ -1,0 +1,7 @@
+Time resolution is 1 ps
+Failure: test finished!
+Time: 900 ns  Iteration: 0  Process: /bool_expr_sim/stim_proc  File: D:/fpga/kitap1b/5_bool_expr/5_bool_expr.srcs/sim_1/new/bool_expr_sim.vhd
+$finish called at time : 900 ns : File "D:/fpga/kitap1b/5_bool_expr/5_bool_expr.srcs/sim_1/new/bool_expr_sim.vhd" Line 51
+Failure: test finished!
+Time: 900 ns  Iteration: 0  Process: /bool_expr_sim/stim_proc  File: D:/fpga/kitap1b/5_bool_expr/5_bool_expr.srcs/sim_1/new/bool_expr_sim.vhd
+$finish called at time : 900 ns : File "D:/fpga/kitap1b/5_bool_expr/5_bool_expr.srcs/sim_1/new/bool_expr_sim.vhd" Line 51

@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../36_neronaurallogix.srcs/sources_1/new/neronaurallogix.vhd" \
+"../../../../36_neronaurallogix.srcs/sim_2/new/neronaurallogix_sim2.vhd" \
+
+# Do not sort compile order
+nosort

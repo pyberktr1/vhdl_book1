@@ -1,0 +1,6 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/fpga/kitap1b/31_bcd_module/31_bcd_module.sim/sim_1/impl/func/xsim/bcd_module_sim_func_impl.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'bcd_counter_mod'
+INFO: [VRFC 10-3107] analyzing entity 'bcd_counter_mod_0'
+INFO: [VRFC 10-3107] analyzing entity 'bcd_counter_mod_1'
+INFO: [VRFC 10-3107] analyzing entity 'bcd_counter_mod_2'
+INFO: [VRFC 10-3107] analyzing entity 'bcd_module'

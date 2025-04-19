@@ -1,0 +1,7 @@
+Time resolution is 1 ps
+Failure: test finished!
+Time: 800 ns  Iteration: 0  Process: /SR_latch_sim/stim_proc  File: D:/fpga/kitap1b/16_SR_latch/16_SR_latch.srcs/sim_1/new/SR_latch_sim.vhd
+$finish called at time : 800 ns : File "D:/fpga/kitap1b/16_SR_latch/16_SR_latch.srcs/sim_1/new/SR_latch_sim.vhd" Line 66
+Failure: test finished!
+Time: 800 ns  Iteration: 0  Process: /SR_latch_sim/stim_proc  File: D:/fpga/kitap1b/16_SR_latch/16_SR_latch.srcs/sim_1/new/SR_latch_sim.vhd
+$finish called at time : 800 ns : File "D:/fpga/kitap1b/16_SR_latch/16_SR_latch.srcs/sim_1/new/SR_latch_sim.vhd" Line 66

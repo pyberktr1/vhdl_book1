@@ -1,0 +1,13 @@
+Time resolution is 1 ps
+Failure: test finished!
+Time: 300 ns  Iteration: 0  Process: /codelock_sim/stim_proc  File: D:/fpga/kitap1b/34_codelock/34_codelock.srcs/sim_1/new/codelock_sim.vhd
+$finish called at time : 300 ns : File "D:/fpga/kitap1b/34_codelock/34_codelock.srcs/sim_1/new/codelock_sim.vhd" Line 153
+Failure: test finished!
+Time: 300 ns  Iteration: 0  Process: /codelock_sim/stim_proc  File: D:/fpga/kitap1b/34_codelock/34_codelock.srcs/sim_1/new/codelock_sim.vhd
+$finish called at time : 300 ns : File "D:/fpga/kitap1b/34_codelock/34_codelock.srcs/sim_1/new/codelock_sim.vhd" Line 153
+Failure: test finished!
+Time: 300 ns  Iteration: 0  Process: /codelock_sim/stim_proc  File: D:/fpga/kitap1b/34_codelock/34_codelock.srcs/sim_1/new/codelock_sim.vhd
+$finish called at time : 300 ns : File "D:/fpga/kitap1b/34_codelock/34_codelock.srcs/sim_1/new/codelock_sim.vhd" Line 153
+Failure: test finished!
+Time: 300 ns  Iteration: 0  Process: /codelock_sim/stim_proc  File: D:/fpga/kitap1b/34_codelock/34_codelock.srcs/sim_1/new/codelock_sim.vhd
+$finish called at time : 300 ns : File "D:/fpga/kitap1b/34_codelock/34_codelock.srcs/sim_1/new/codelock_sim.vhd" Line 153

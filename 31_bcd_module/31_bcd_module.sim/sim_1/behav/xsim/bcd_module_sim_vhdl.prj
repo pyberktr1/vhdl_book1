@@ -1,0 +1,8 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../31_bcd_module.srcs/sources_1/new/bcd_counter_mod.vhd" \
+"../../../../31_bcd_module.srcs/sources_1/new/bcd_module.vhd" \
+"../../../../31_bcd_module.srcs/sim_1/new/bcd_module_sim.vhd" \
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,9 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../37_nenet.srcs/sources_1/new/demux_4x16.vhd" \
+"../../../../37_nenet.srcs/sources_1/new/nenet.vhd" \
+"../../../../37_nenet.srcs/sources_1/new/neronaurallogix.vhd" \
+"../../../../37_nenet.srcs/sim_2/imports/new/nenet_sim2.vhd" \
+
+# Do not sort compile order
+nosort

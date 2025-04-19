@@ -1,0 +1,1 @@
+--incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" --snapshot "bcd_module_sim_func_impl" "xil_defaultlib.bcd_module_sim" -log "elaborate.log" 

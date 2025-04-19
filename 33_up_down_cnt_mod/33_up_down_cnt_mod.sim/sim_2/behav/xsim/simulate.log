@@ -1,0 +1,7 @@
+Time resolution is 1 ps
+Failure: test finished!
+Time: 740 ns  Iteration: 0  Process: /up_down_cnt_mod_sim/stim_proc  File: D:/fpga/kitap1b/33_up_down_cnt_mod/33_up_down_cnt_mod.srcs/sim_2/new/up_down_cnt_mod_sim2.vhd
+$finish called at time : 740 ns : File "D:/fpga/kitap1b/33_up_down_cnt_mod/33_up_down_cnt_mod.srcs/sim_2/new/up_down_cnt_mod_sim2.vhd" Line 95
+Failure: test finished!
+Time: 740 ns  Iteration: 0  Process: /up_down_cnt_mod_sim/stim_proc  File: D:/fpga/kitap1b/33_up_down_cnt_mod/33_up_down_cnt_mod.srcs/sim_2/new/up_down_cnt_mod_sim2.vhd
+$finish called at time : 740 ns : File "D:/fpga/kitap1b/33_up_down_cnt_mod/33_up_down_cnt_mod.srcs/sim_2/new/up_down_cnt_mod_sim2.vhd" Line 95

@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Mon Mar  3 16:05:45 2025
+# Process ID: 2364
+# Current directory: D:/fpga/kitap1b/27_ring_counter/27_ring_counter.runs/synth_1
+# Command line: vivado.exe -log ring_counter.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ring_counter.tcl
+# Log file: D:/fpga/kitap1b/27_ring_counter/27_ring_counter.runs/synth_1/ring_counter.vds
+# Journal file: D:/fpga/kitap1b/27_ring_counter/27_ring_counter.runs/synth_1\vivado.jou
+# Running On: hberkal, OS: Windows, CPU Frequency: 2918 MHz, CPU Physical cores: 14, Host memory: 16893 MB
+#-----------------------------------------------------------
+source ring_counter.tcl -notrace

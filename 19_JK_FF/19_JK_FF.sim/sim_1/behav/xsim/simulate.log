@@ -1,0 +1,7 @@
+Time resolution is 1 ps
+Failure: test finished!
+Time: 940 ns  Iteration: 0  Process: /JK_FF_sim/stim_proc  File: D:/fpga/kitap1b/19_JK_FF/19_JK_FF.srcs/sim_1/new/19_JK_FF_sim.vhd
+$finish called at time : 940 ns : File "D:/fpga/kitap1b/19_JK_FF/19_JK_FF.srcs/sim_1/new/19_JK_FF_sim.vhd" Line 85
+Failure: test finished!
+Time: 940 ns  Iteration: 0  Process: /JK_FF_sim/stim_proc  File: D:/fpga/kitap1b/19_JK_FF/19_JK_FF.srcs/sim_1/new/19_JK_FF_sim.vhd
+$finish called at time : 940 ns : File "D:/fpga/kitap1b/19_JK_FF/19_JK_FF.srcs/sim_1/new/19_JK_FF_sim.vhd" Line 85

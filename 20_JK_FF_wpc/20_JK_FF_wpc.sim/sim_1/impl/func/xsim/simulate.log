@@ -1,0 +1,15 @@
+Time resolution is 1 ps
+Error: error on toggle, out: 0output_old: 3
+Time: 140 ns  Iteration: 0  Process: /JK_FF_wpc_sim/stim_proc  File: D:/fpga/kitap1b/20_JK_FF_wpc/20_JK_FF_wpc.srcs/sim_1/new/JK_FF_wpc_sim.vhd
+Error: error on others, input: 16
+Time: 180 ns  Iteration: 0  Process: /JK_FF_wpc_sim/stim_proc  File: D:/fpga/kitap1b/20_JK_FF_wpc/20_JK_FF_wpc.srcs/sim_1/new/JK_FF_wpc_sim.vhd
+Failure: test finished!
+Time: 180 ns  Iteration: 0  Process: /JK_FF_wpc_sim/stim_proc  File: D:/fpga/kitap1b/20_JK_FF_wpc/20_JK_FF_wpc.srcs/sim_1/new/JK_FF_wpc_sim.vhd
+$finish called at time : 180 ns : File "D:/fpga/kitap1b/20_JK_FF_wpc/20_JK_FF_wpc.srcs/sim_1/new/JK_FF_wpc_sim.vhd" Line 118
+Error: error on toggle, out: 0output_old: 3
+Time: 140 ns  Iteration: 0  Process: /JK_FF_wpc_sim/stim_proc  File: D:/fpga/kitap1b/20_JK_FF_wpc/20_JK_FF_wpc.srcs/sim_1/new/JK_FF_wpc_sim.vhd
+Error: error on others, input: 16
+Time: 180 ns  Iteration: 0  Process: /JK_FF_wpc_sim/stim_proc  File: D:/fpga/kitap1b/20_JK_FF_wpc/20_JK_FF_wpc.srcs/sim_1/new/JK_FF_wpc_sim.vhd
+Failure: test finished!
+Time: 180 ns  Iteration: 0  Process: /JK_FF_wpc_sim/stim_proc  File: D:/fpga/kitap1b/20_JK_FF_wpc/20_JK_FF_wpc.srcs/sim_1/new/JK_FF_wpc_sim.vhd
+$finish called at time : 180 ns : File "D:/fpga/kitap1b/20_JK_FF_wpc/20_JK_FF_wpc.srcs/sim_1/new/JK_FF_wpc_sim.vhd" Line 118

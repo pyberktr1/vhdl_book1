@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1741270479">
+  <File Type="ROUTE-PWR" Name="bcd_counter_mod_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="bcd_counter_mod.tcl"/>
+  <File Type="BITSTR-MMI" Name="bcd_counter_mod.mmi"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="bcd_counter_mod_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="bcd_counter_mod_timing_summary_init.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="bcd_counter_mod_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="bcd_counter_mod_reports.tcl"/>
+  <File Type="OPT-TIMING" Name="bcd_counter_mod_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="bcd_counter_mod_opt.dcp"/>
+  <File Type="OPT-DRC" Name="bcd_counter_mod_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="bcd_counter_mod.hwdef"/>
+  <File Type="PWROPT-DCP" Name="bcd_counter_mod_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="bcd_counter_mod_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="bcd_counter_mod_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="bcd_counter_mod_placed.dcp"/>
+  <File Type="PLACE-IO" Name="bcd_counter_mod_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="bcd_counter_mod_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="bcd_counter_mod_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="bcd_counter_mod_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="bcd_counter_mod_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="bcd_counter_mod_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="bcd_counter_mod_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BG-BIN" Name="bcd_counter_mod.bin"/>
+  <File Type="PLACE-TIMING" Name="bcd_counter_mod_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="bcd_counter_mod_postplace_pwropt.dcp"/>
+  <File Type="BITSTR-MSK" Name="bcd_counter_mod.msk"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="bcd_counter_mod_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="bcd_counter_mod_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="bcd_counter_mod_drc_physopted.rpt"/>
+  <File Type="BITSTR-RBT" Name="bcd_counter_mod.rbt"/>
+  <File Type="PHYSOPT-TIMING" Name="bcd_counter_mod_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="bcd_counter_mod_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="bcd_counter_mod_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="bcd_counter_mod_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="bcd_counter_mod_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="bcd_counter_mod_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="bcd_counter_mod_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="bcd_counter_mod_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="bcd_counter_mod_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="bcd_counter_mod_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="bcd_counter_mod_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="bcd_counter_mod_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="bcd_counter_mod_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="bcd_counter_mod_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="bcd_counter_mod_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="bcd_counter_mod_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="bcd_counter_mod_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="bcd_counter_mod_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="bcd_counter_mod_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="bcd_counter_mod_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="bcd_counter_mod_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="bcd_counter_mod_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="bcd_counter_mod_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="bcd_counter_mod_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="bcd_counter_mod_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="bcd_counter_mod_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="bcd_counter_mod_bus_skew_postroute_physopted.rpt"/>
+  <File Type="BG-BIT" Name="bcd_counter_mod.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="bcd_counter_mod_bus_skew_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="bcd_counter_mod_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BITSTR-NKY" Name="bcd_counter_mod.nky"/>
+  <File Type="BITSTR-BMM" Name="bcd_counter_mod_bd.bmm"/>
+  <File Type="PDI-FILE" Name="bcd_counter_mod.pdi"/>
+  <File Type="RCFI_FILE" Name="bcd_counter_mod.rcfi"/>
+  <File Type="CFI_FILE" Name="bcd_counter_mod.cfi"/>
+  <File Type="RNPI_FILE" Name="bcd_counter_mod.rnpi"/>
+  <File Type="NPI_FILE" Name="bcd_counter_mod.npi"/>
+  <File Type="RBD_FILE" Name="bcd_counter_mod.rbd"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="bcd_counter_mod.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="bcd_counter_mod.sysdef"/>
+  <File Type="BG-BGN" Name="bcd_counter_mod.bgn"/>
+  <File Type="BG-DRC" Name="bcd_counter_mod.drc"/>
+  <File Type="RDI-RDI" Name="bcd_counter_mod.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="ROUTE-RQS" Name="bcd_counter_mod_routed.rqs"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS" Name="bcd_counter_mod_postroute_physopted.rqs"/>
+  <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS-RPT" Name="postroute_physopt_report_qor_suggestions_0.rpt"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/bcd_counter_mod.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="bcd_counter_mod"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/kitap1b/Cmod-A7-Master.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Cmod-A7-Master.xdc"/>
+        <Attr Name="ImportTime" Val="1628606177"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <File Path="$PSRCDIR/utils_1/imports/synth_1/bcd_counter.dcp">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedInSteps" Val="synth_1"/>
+        <Attr Name="AutoDcp" Val="1"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2022"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

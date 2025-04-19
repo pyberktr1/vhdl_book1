@@ -1,0 +1,11 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../39_echo.srcs/sources_1/new/adder.vhd" \
+"../../../../39_echo.srcs/sources_1/new/delay.vhd" \
+"../../../../39_echo.srcs/sources_1/new/delayline.vhd" \
+"../../../../39_echo.srcs/sources_1/new/gain.vhd" \
+"../../../../39_echo.srcs/sources_1/new/echo.vhd" \
+"../../../../39_echo.srcs/sim_2/new/echo_sim2.vhd" \
+
+# Do not sort compile order
+nosort

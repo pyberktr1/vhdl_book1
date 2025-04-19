@@ -1,0 +1,1 @@
+--incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" --snapshot "bool_expr_sim_behav" "xil_defaultlib.bool_expr_sim" -log "elaborate.log" 

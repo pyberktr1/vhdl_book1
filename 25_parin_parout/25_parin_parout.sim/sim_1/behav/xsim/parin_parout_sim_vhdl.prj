@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../25_parin_parout.srcs/sources_1/new/parin_parout.vhd" \
+"../../../../25_parin_parout.srcs/sim_1/new/parin_parout_sim.vhd" \
+
+# Do not sort compile order
+nosort

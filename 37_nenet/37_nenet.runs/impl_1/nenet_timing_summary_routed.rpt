@@ -1,0 +1,2401 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Sat Mar 15 18:38:04 2025
+| Host         : hberkal running 64-bit major release  (build 9200)
+| Command      : report_timing_summary -max_paths 10 -report_unconstrained -file nenet_timing_summary_routed.rpt -pb nenet_timing_summary_routed.pb -rpx nenet_timing_summary_routed.rpx -warn_on_violation
+| Design       : nenet
+| Device       : 7a35t-cpg236
+| Speed File   : -1  PRODUCTION 1.23 2018-06-13
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Summary Report
+
+------------------------------------------------------------------------------------------------
+| Timer Settings
+| --------------
+------------------------------------------------------------------------------------------------
+
+  Enable Multi Corner Analysis               :  Yes
+  Enable Pessimism Removal                   :  Yes
+  Pessimism Removal Resolution               :  Nearest Common Node
+  Enable Input Delay Default Clock           :  No
+  Enable Preset / Clear Arcs                 :  No
+  Disable Flight Delays                      :  No
+  Ignore I/O Paths                           :  No
+  Timing Early Launch at Borrowing Latches   :  No
+  Borrow Time for Max Delay Exceptions       :  Yes
+  Merge Timing Exceptions                    :  Yes
+
+  Corner  Analyze    Analyze    
+  Name    Max Paths  Min Paths  
+  ------  ---------  ---------  
+  Slow    Yes        Yes        
+  Fast    Yes        Yes        
+
+
+------------------------------------------------------------------------------------------------
+| Report Methodology
+| ------------------
+------------------------------------------------------------------------------------------------
+
+Rule       Severity  Description                    Violations  
+---------  --------  -----------------------------  ----------  
+TIMING-18  Warning   Missing input or output delay  15          
+
+Note: This report is based on the most recent report_methodology run and may not be up-to-date. Run report_methodology on the current design for the latest report.
+
+
+
+check_timing report
+
+Table of Contents
+-----------------
+1. checking no_clock (0)
+2. checking constant_clock (0)
+3. checking pulse_width_clock (0)
+4. checking unconstrained_internal_endpoints (0)
+5. checking no_input_delay (11)
+6. checking no_output_delay (4)
+7. checking multiple_clock (0)
+8. checking generated_clocks (0)
+9. checking loops (0)
+10. checking partial_input_delay (0)
+11. checking partial_output_delay (0)
+12. checking latch_loops (0)
+
+1. checking no_clock (0)
+------------------------
+ There are 0 register/latch pins with no clock.
+
+
+2. checking constant_clock (0)
+------------------------------
+ There are 0 register/latch pins with constant_clock.
+
+
+3. checking pulse_width_clock (0)
+---------------------------------
+ There are 0 register/latch pins which need pulse_width check
+
+
+4. checking unconstrained_internal_endpoints (0)
+------------------------------------------------
+ There are 0 pins that are not constrained for maximum delay.
+
+ There are 0 pins that are not constrained for maximum delay due to constant clock.
+
+
+5. checking no_input_delay (11)
+-------------------------------
+ There are 11 input ports with no input delay specified. (HIGH)
+
+ There are 0 input ports with no input delay but user has a false path constraint.
+
+
+6. checking no_output_delay (4)
+-------------------------------
+ There are 4 ports with no output delay specified. (HIGH)
+
+ There are 0 ports with no output delay but user has a false path constraint
+
+ There are 0 ports with no output delay but with a timing clock defined on it or propagating through it
+
+
+7. checking multiple_clock (0)
+------------------------------
+ There are 0 register/latch pins with multiple clocks.
+
+
+8. checking generated_clocks (0)
+--------------------------------
+ There are 0 generated clocks that are not connected to a clock source.
+
+
+9. checking loops (0)
+---------------------
+ There are 0 combinational loops in the design.
+
+
+10. checking partial_input_delay (0)
+------------------------------------
+ There are 0 input ports with partial input delay specified.
+
+
+11. checking partial_output_delay (0)
+-------------------------------------
+ There are 0 ports with partial output delay specified.
+
+
+12. checking latch_loops (0)
+----------------------------
+ There are 0 combinational latch loops in the design through latch input
+
+
+
+------------------------------------------------------------------------------------------------
+| Design Timing Summary
+| ---------------------
+------------------------------------------------------------------------------------------------
+
+    WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+    -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+     15.546        0.000                      0                   52        0.152        0.000                      0                   52        9.500        0.000                       0                    53  
+
+
+All user specified timing constraints are met.
+
+
+------------------------------------------------------------------------------------------------
+| Clock Summary
+| -------------
+------------------------------------------------------------------------------------------------
+
+Clock    Waveform(ns)       Period(ns)      Frequency(MHz)
+-----    ------------       ----------      --------------
+clk_pin  {0.000 10.000}     20.000          50.000          
+
+
+------------------------------------------------------------------------------------------------
+| Intra Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+Clock             WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+-----             -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+clk_pin            15.546        0.000                      0                   52        0.152        0.000                      0                   52        9.500        0.000                       0                    53  
+
+
+------------------------------------------------------------------------------------------------
+| Inter Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Other Path Groups Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    ----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| User Ignored Path Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock    
+----------    ----------    --------    
+
+
+------------------------------------------------------------------------------------------------
+| Unconstrained Path Table
+| ------------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock    
+----------    ----------    --------    
+(none)        clk_pin                     
+(none)                      clk_pin       
+
+
+------------------------------------------------------------------------------------------------
+| Timing Details
+| --------------
+------------------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  clk_pin
+  To Clock:  clk_pin
+
+Setup :            0  Failing Endpoints,  Worst Slack       15.546ns,  Total Violation        0.000ns
+Hold  :            0  Failing Endpoints,  Worst Slack        0.152ns,  Total Violation        0.000ns
+PW    :            0  Failing Endpoints,  Worst Slack        9.500ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             15.546ns  (required time - arrival time)
+  Source:                 nenet_gen[1].row_gen[3].neron_inst/q_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by clk_pin  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            nenet_gen[1].row_gen[0].neron_inst/q_reg[3]/D
+                            (rising edge-triggered cell FDRE clocked by clk_pin  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             clk_pin
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            20.000ns  (clk_pin rise@20.000ns - clk_pin rise@0.000ns)
+  Data Path Delay:        4.456ns  (logic 1.586ns (35.594%)  route 2.870ns (64.406%))
+  Logic Levels:           4  (CARRY4=1 LUT4=1 LUT5=1 LUT6=1)
+  Clock Path Skew:        -0.040ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    5.131ns = ( 25.131 - 20.000 ) 
+    Source Clock Delay      (SCD):    5.443ns
+    Clock Pessimism Removal (CPR):    0.273ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_pin rise edge)    0.000     0.000 r  
+    C15                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    C15                  IBUF (Prop_ibuf_I_O)         1.450     1.450 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           2.273     3.723    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.096     3.819 r  clk_IBUF_BUFG_inst/O
+                         net (fo=52, routed)          1.624     5.443    nenet_gen[1].row_gen[3].neron_inst/CLK
+    SLICE_X65Y94         FDRE                                         r  nenet_gen[1].row_gen[3].neron_inst/q_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X65Y94         FDRE (Prop_fdre_C_Q)         0.456     5.899 r  nenet_gen[1].row_gen[3].neron_inst/q_reg[1]/Q
+                         net (fo=12, routed)          1.327     7.226    nenet_gen[2].row_gen[0].neron_inst/multOp__0_carry_0[1]
+    SLICE_X61Y93         LUT4 (Prop_lut4_I1_O)        0.124     7.350 r  nenet_gen[2].row_gen[0].neron_inst/multOp__0_carry_i_5__3/O
+                         net (fo=1, routed)           0.000     7.350    nenet_gen[1].row_gen[0].neron_inst/S[1]
+    SLICE_X61Y93         CARRY4 (Prop_carry4_S[1]_O[2])
+                                                      0.580     7.930 r  nenet_gen[1].row_gen[0].neron_inst/multOp__0_carry/O[2]
+                         net (fo=2, routed)           0.949     8.879    nenet_gen[0].row_gen[0].neron_inst/q_reg[3]_0[2]
+    SLICE_X61Y92         LUT6 (Prop_lut6_I4_O)        0.302     9.181 r  nenet_gen[0].row_gen[0].neron_inst/q[3]_i_3__3/O
+                         net (fo=1, routed)           0.594     9.775    nenet_gen[0].row_gen[0].neron_inst/q[3]_i_3__3_n_0
+    SLICE_X60Y94         LUT5 (Prop_lut5_I1_O)        0.124     9.899 r  nenet_gen[0].row_gen[0].neron_inst/q[3]_i_2__7/O
+                         net (fo=1, routed)           0.000     9.899    nenet_gen[1].row_gen[0].neron_inst/q_reg[3]_0[0]
+    SLICE_X60Y94         FDRE                                         r  nenet_gen[1].row_gen[0].neron_inst/q_reg[3]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_pin rise edge)   20.000    20.000 r  
+    C15                                               0.000    20.000 r  clk (IN)
+                         net (fo=0)                   0.000    20.000    clk
+    C15                  IBUF (Prop_ibuf_I_O)         1.380    21.380 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           2.155    23.535    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    23.626 r  clk_IBUF_BUFG_inst/O
+                         net (fo=52, routed)          1.505    25.131    nenet_gen[1].row_gen[0].neron_inst/CLK
+    SLICE_X60Y94         FDRE                                         r  nenet_gen[1].row_gen[0].neron_inst/q_reg[3]/C
+                         clock pessimism              0.273    25.403    
+                         clock uncertainty           -0.035    25.368    
+    SLICE_X60Y94         FDRE (Setup_fdre_C_D)        0.077    25.445    nenet_gen[1].row_gen[0].neron_inst/q_reg[3]
+  -------------------------------------------------------------------
+                         required time                         25.445    
+                         arrival time                          -9.899    
+  -------------------------------------------------------------------
+                         slack                                 15.546    
+
+Slack (MET) :             15.557ns  (required time - arrival time)
+  Source:                 nenet_gen[0].row_gen[2].neron_inst/q_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by clk_pin  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            nenet_gen[0].row_gen[3].neron_inst/q_reg[3]/D
+                            (rising edge-triggered cell FDRE clocked by clk_pin  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             clk_pin
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            20.000ns  (clk_pin rise@20.000ns - clk_pin rise@0.000ns)
+  Data Path Delay:        4.355ns  (logic 1.240ns (28.475%)  route 3.115ns (71.525%))
+  Logic Levels:           4  (CARRY4=1 LUT4=1 LUT5=1 LUT6=1)
+  Clock Path Skew:        -0.025ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    5.132ns = ( 25.132 - 20.000 ) 
+    Source Clock Delay      (SCD):    5.443ns
+    Clock Pessimism Removal (CPR):    0.287ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_pin rise edge)    0.000     0.000 r  
+    C15                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    C15                  IBUF (Prop_ibuf_I_O)         1.450     1.450 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           2.273     3.723    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.096     3.819 r  clk_IBUF_BUFG_inst/O
+                         net (fo=52, routed)          1.624     5.443    nenet_gen[0].row_gen[2].neron_inst/CLK
+    SLICE_X62Y96         FDRE                                         r  nenet_gen[0].row_gen[2].neron_inst/q_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X62Y96         FDRE (Prop_fdre_C_Q)         0.456     5.899 r  nenet_gen[0].row_gen[2].neron_inst/q_reg[1]/Q
+                         net (fo=12, routed)          1.185     7.085    nenet_gen[1].row_gen[3].neron_inst/multOp__0_carry_0[1]
+    SLICE_X64Y94         LUT4 (Prop_lut4_I1_O)        0.124     7.209 r  nenet_gen[1].row_gen[3].neron_inst/multOp__0_carry_i_5__2/O
+                         net (fo=1, routed)           0.000     7.209    nenet_gen[0].row_gen[3].neron_inst/S[1]
+    SLICE_X64Y94         CARRY4 (Prop_carry4_S[1]_O[1])
+                                                      0.230     7.439 r  nenet_gen[0].row_gen[3].neron_inst/multOp__0_carry/O[1]
+                         net (fo=3, routed)           0.833     8.272    nenet_gen[2].row_gen[3].neron_inst/q_reg[3]_2[1]
+    SLICE_X64Y93         LUT6 (Prop_lut6_I3_O)        0.306     8.578 r  nenet_gen[2].row_gen[3].neron_inst/q[3]_i_3__2/O
+                         net (fo=1, routed)           0.717     9.295    nenet_gen[2].row_gen[3].neron_inst/q[3]_i_3__2_n_0
+    SLICE_X65Y93         LUT5 (Prop_lut5_I1_O)        0.124     9.419 r  nenet_gen[2].row_gen[3].neron_inst/q[3]_i_2__8/O
+                         net (fo=2, routed)           0.379     9.798    nenet_gen[0].row_gen[3].neron_inst/q_reg[3]_1[0]
+    SLICE_X64Y93         FDRE                                         r  nenet_gen[0].row_gen[3].neron_inst/q_reg[3]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_pin rise edge)   20.000    20.000 r  
+    C15                                               0.000    20.000 r  clk (IN)
+                         net (fo=0)                   0.000    20.000    clk
+    C15                  IBUF (Prop_ibuf_I_O)         1.380    21.380 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           2.155    23.535    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    23.626 r  clk_IBUF_BUFG_inst/O
+                         net (fo=52, routed)          1.506    25.132    nenet_gen[0].row_gen[3].neron_inst/CLK
+    SLICE_X64Y93         FDRE                                         r  nenet_gen[0].row_gen[3].neron_inst/q_reg[3]/C
+                         clock pessimism              0.287    25.418    
+                         clock uncertainty           -0.035    25.383    
+    SLICE_X64Y93         FDRE (Setup_fdre_C_D)       -0.028    25.355    nenet_gen[0].row_gen[3].neron_inst/q_reg[3]
+  -------------------------------------------------------------------
+                         required time                         25.355    
+                         arrival time                          -9.798    
+  -------------------------------------------------------------------
+                         slack                                 15.557    
+
+Slack (MET) :             15.838ns  (required time - arrival time)
+  Source:                 nenet_gen[2].row_gen[3].neron_inst/q_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by clk_pin  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            nenet_gen[1].row_gen[3].neron_inst/q_reg[3]/D
+                            (rising edge-triggered cell FDRE clocked by clk_pin  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             clk_pin
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            20.000ns  (clk_pin rise@20.000ns - clk_pin rise@0.000ns)
+  Data Path Delay:        4.132ns  (logic 1.324ns (32.042%)  route 2.808ns (67.958%))
+  Logic Levels:           3  (CARRY4=1 LUT4=1 LUT5=1)
+  Clock Path Skew:        -0.024ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    5.132ns = ( 25.132 - 20.000 ) 
+    Source Clock Delay      (SCD):    5.442ns
+    Clock Pessimism Removal (CPR):    0.287ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_pin rise edge)    0.000     0.000 r  
+    C15                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    C15                  IBUF (Prop_ibuf_I_O)         1.450     1.450 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           2.273     3.723    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.096     3.819 r  clk_IBUF_BUFG_inst/O
+                         net (fo=52, routed)          1.623     5.442    nenet_gen[2].row_gen[3].neron_inst/CLK
+    SLICE_X65Y92         FDRE                                         r  nenet_gen[2].row_gen[3].neron_inst/q_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X65Y92         FDRE (Prop_fdre_C_Q)         0.456     5.898 r  nenet_gen[2].row_gen[3].neron_inst/q_reg[1]/Q
+                         net (fo=12, routed)          1.485     7.383    nenet_gen[2].row_gen[3].neron_inst/Q[1]
+    SLICE_X64Y95         LUT4 (Prop_lut4_I0_O)        0.124     7.507 r  nenet_gen[2].row_gen[3].neron_inst/multOp__0_carry_i_1__6/O
+                         net (fo=1, routed)           0.521     8.029    nenet_gen[1].row_gen[3].neron_inst/DI[1]
+    SLICE_X65Y95         CARRY4 (Prop_carry4_DI[2]_O[3])
+                                                      0.438     8.467 r  nenet_gen[1].row_gen[3].neron_inst/multOp__0_carry/O[3]
+                         net (fo=1, routed)           0.802     9.268    nenet_gen[0].row_gen[3].neron_inst/q_reg[3]_0[3]
+    SLICE_X63Y94         LUT5 (Prop_lut5_I3_O)        0.306     9.574 r  nenet_gen[0].row_gen[3].neron_inst/q[3]_i_2__4/O
+                         net (fo=1, routed)           0.000     9.574    nenet_gen[1].row_gen[3].neron_inst/q_reg[3]_0[0]
+    SLICE_X63Y94         FDRE                                         r  nenet_gen[1].row_gen[3].neron_inst/q_reg[3]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_pin rise edge)   20.000    20.000 r  
+    C15                                               0.000    20.000 r  clk (IN)
+                         net (fo=0)                   0.000    20.000    clk
+    C15                  IBUF (Prop_ibuf_I_O)         1.380    21.380 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           2.155    23.535    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    23.626 r  clk_IBUF_BUFG_inst/O
+                         net (fo=52, routed)          1.506    25.132    nenet_gen[1].row_gen[3].neron_inst/CLK
+    SLICE_X63Y94         FDRE                                         r  nenet_gen[1].row_gen[3].neron_inst/q_reg[3]/C
+                         clock pessimism              0.287    25.418    
+                         clock uncertainty           -0.035    25.383    
+    SLICE_X63Y94         FDRE (Setup_fdre_C_D)        0.029    25.412    nenet_gen[1].row_gen[3].neron_inst/q_reg[3]
+  -------------------------------------------------------------------
+                         required time                         25.412    
+                         arrival time                          -9.574    
+  -------------------------------------------------------------------
+                         slack                                 15.838    
+
+Slack (MET) :             15.849ns  (required time - arrival time)
+  Source:                 nenet_gen[1].row_gen[3].neron_inst/q_reg[0]/C
+                            (rising edge-triggered cell FDRE clocked by clk_pin  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            nenet_gen[1].row_gen[0].neron_inst/q_reg[2]/D
+                            (rising edge-triggered cell FDRE clocked by clk_pin  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             clk_pin
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            20.000ns  (clk_pin rise@20.000ns - clk_pin rise@0.000ns)
+  Data Path Delay:        4.104ns  (logic 1.431ns (34.871%)  route 2.673ns (65.129%))
+  Logic Levels:           4  (CARRY4=1 LUT2=1 LUT4=1 LUT5=1)
+  Clock Path Skew:        -0.041ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    5.130ns = ( 25.130 - 20.000 ) 
+    Source Clock Delay      (SCD):    5.443ns
+    Clock Pessimism Removal (CPR):    0.273ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_pin rise edge)    0.000     0.000 r  
+    C15                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    C15                  IBUF (Prop_ibuf_I_O)         1.450     1.450 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           2.273     3.723    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.096     3.819 r  clk_IBUF_BUFG_inst/O
+                         net (fo=52, routed)          1.624     5.443    nenet_gen[1].row_gen[3].neron_inst/CLK
+    SLICE_X63Y94         FDRE                                         r  nenet_gen[1].row_gen[3].neron_inst/q_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X63Y94         FDRE (Prop_fdre_C_Q)         0.456     5.899 r  nenet_gen[1].row_gen[3].neron_inst/q_reg[0]/Q
+                         net (fo=14, routed)          1.146     7.045    nenet_gen[1].row_gen[3].neron_inst/Q[0]
+    SLICE_X61Y93         LUT2 (Prop_lut2_I0_O)        0.124     7.169 r  nenet_gen[1].row_gen[3].neron_inst/multOp__0_carry_i_6__3/O
+                         net (fo=1, routed)           0.000     7.169    nenet_gen[1].row_gen[0].neron_inst/S[0]
+    SLICE_X61Y93         CARRY4 (Prop_carry4_S[0]_O[1])
+                                                      0.424     7.593 r  nenet_gen[1].row_gen[0].neron_inst/multOp__0_carry/O[1]
+                         net (fo=3, routed)           1.094     8.687    nenet_gen[1].row_gen[0].neron_inst/q_reg[1]_0[1]
+    SLICE_X59Y92         LUT4 (Prop_lut4_I0_O)        0.303     8.990 r  nenet_gen[1].row_gen[0].neron_inst/q[2]_i_2__3/O
+                         net (fo=1, routed)           0.433     9.423    nenet_gen[1].row_gen[0].neron_inst/q[2]_i_2__3_n_0
+    SLICE_X59Y92         LUT5 (Prop_lut5_I1_O)        0.124     9.547 r  nenet_gen[1].row_gen[0].neron_inst/q[2]_i_1__7/O
+                         net (fo=1, routed)           0.000     9.547    nenet_gen[1].row_gen[0].neron_inst/q[2]_i_1__7_n_0
+    SLICE_X59Y92         FDRE                                         r  nenet_gen[1].row_gen[0].neron_inst/q_reg[2]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_pin rise edge)   20.000    20.000 r  
+    C15                                               0.000    20.000 r  clk (IN)
+                         net (fo=0)                   0.000    20.000    clk
+    C15                  IBUF (Prop_ibuf_I_O)         1.380    21.380 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           2.155    23.535    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    23.626 r  clk_IBUF_BUFG_inst/O
+                         net (fo=52, routed)          1.504    25.130    nenet_gen[1].row_gen[0].neron_inst/CLK
+    SLICE_X59Y92         FDRE                                         r  nenet_gen[1].row_gen[0].neron_inst/q_reg[2]/C
+                         clock pessimism              0.273    25.402    
+                         clock uncertainty           -0.035    25.367    
+    SLICE_X59Y92         FDRE (Setup_fdre_C_D)        0.029    25.396    nenet_gen[1].row_gen[0].neron_inst/q_reg[2]
+  -------------------------------------------------------------------
+                         required time                         25.396    
+                         arrival time                          -9.547    
+  -------------------------------------------------------------------
+                         slack                                 15.849    
+
+Slack (MET) :             15.905ns  (required time - arrival time)
+  Source:                 nenet_gen[0].row_gen[1].neron_inst/q_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by clk_pin  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            nenet_gen[2].row_gen[1].neron_inst/q_reg[3]/D
+                            (rising edge-triggered cell FDRE clocked by clk_pin  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             clk_pin
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            20.000ns  (clk_pin rise@20.000ns - clk_pin rise@0.000ns)
+  Data Path Delay:        4.064ns  (logic 1.258ns (30.951%)  route 2.806ns (69.049%))
+  Logic Levels:           4  (CARRY4=1 LUT3=1 LUT5=1 LUT6=1)
+  Clock Path Skew:        -0.024ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    5.132ns = ( 25.132 - 20.000 ) 
+    Source Clock Delay      (SCD):    5.442ns
+    Clock Pessimism Removal (CPR):    0.287ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_pin rise edge)    0.000     0.000 r  
+    C15                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    C15                  IBUF (Prop_ibuf_I_O)         1.450     1.450 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           2.273     3.723    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.096     3.819 r  clk_IBUF_BUFG_inst/O
+                         net (fo=52, routed)          1.623     5.442    nenet_gen[0].row_gen[1].neron_inst/CLK
+    SLICE_X58Y95         FDRE                                         r  nenet_gen[0].row_gen[1].neron_inst/q_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X58Y95         FDRE (Prop_fdre_C_Q)         0.456     5.898 r  nenet_gen[0].row_gen[1].neron_inst/q_reg[1]/Q
+                         net (fo=12, routed)          1.343     7.242    nenet_gen[0].row_gen[1].neron_inst/Q[1]
+    SLICE_X60Y97         LUT6 (Prop_lut6_I5_O)        0.124     7.366 r  nenet_gen[0].row_gen[1].neron_inst/multOp__0_carry_i_7__8/O
+                         net (fo=1, routed)           0.804     8.170    nenet_gen[0].row_gen[1].neron_inst/multOp__0_carry_i_7__8_n_0
+    SLICE_X59Y97         LUT3 (Prop_lut3_I2_O)        0.124     8.294 r  nenet_gen[0].row_gen[1].neron_inst/multOp__0_carry_i_3__8/O
+                         net (fo=1, routed)           0.000     8.294    nenet_gen[2].row_gen[1].neron_inst/S[3]
+    SLICE_X59Y97         CARRY4 (Prop_carry4_S[3]_O[3])
+                                                      0.248     8.542 r  nenet_gen[2].row_gen[1].neron_inst/multOp__0_carry/O[3]
+                         net (fo=1, routed)           0.659     9.201    nenet_gen[1].row_gen[1].neron_inst/O[3]
+    SLICE_X58Y97         LUT5 (Prop_lut5_I3_O)        0.306     9.507 r  nenet_gen[1].row_gen[1].neron_inst/q[3]_i_2__2/O
+                         net (fo=1, routed)           0.000     9.507    nenet_gen[2].row_gen[1].neron_inst/D[0]
+    SLICE_X58Y97         FDRE                                         r  nenet_gen[2].row_gen[1].neron_inst/q_reg[3]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_pin rise edge)   20.000    20.000 r  
+    C15                                               0.000    20.000 r  clk (IN)
+                         net (fo=0)                   0.000    20.000    clk
+    C15                  IBUF (Prop_ibuf_I_O)         1.380    21.380 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           2.155    23.535    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    23.626 r  clk_IBUF_BUFG_inst/O
+                         net (fo=52, routed)          1.506    25.132    nenet_gen[2].row_gen[1].neron_inst/CLK
+    SLICE_X58Y97         FDRE                                         r  nenet_gen[2].row_gen[1].neron_inst/q_reg[3]/C
+                         clock pessimism              0.287    25.418    
+                         clock uncertainty           -0.035    25.383    
+    SLICE_X58Y97         FDRE (Setup_fdre_C_D)        0.029    25.412    nenet_gen[2].row_gen[1].neron_inst/q_reg[3]
+  -------------------------------------------------------------------
+                         required time                         25.412    
+                         arrival time                          -9.507    
+  -------------------------------------------------------------------
+                         slack                                 15.905    
+
+Slack (MET) :             15.954ns  (required time - arrival time)
+  Source:                 nenet_gen[1].row_gen[0].neron_inst/q_reg[0]/C
+                            (rising edge-triggered cell FDRE clocked by clk_pin  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            nenet_gen[1].row_gen[1].neron_inst/q_reg[2]/D
+                            (rising edge-triggered cell FDRE clocked by clk_pin  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             clk_pin
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            20.000ns  (clk_pin rise@20.000ns - clk_pin rise@0.000ns)
+  Data Path Delay:        4.015ns  (logic 1.240ns (30.882%)  route 2.775ns (69.118%))
+  Logic Levels:           4  (CARRY4=1 LUT4=2 LUT5=1)
+  Clock Path Skew:        -0.024ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    5.132ns = ( 25.132 - 20.000 ) 
+    Source Clock Delay      (SCD):    5.442ns
+    Clock Pessimism Removal (CPR):    0.287ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_pin rise edge)    0.000     0.000 r  
+    C15                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    C15                  IBUF (Prop_ibuf_I_O)         1.450     1.450 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           2.273     3.723    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.096     3.819 r  clk_IBUF_BUFG_inst/O
+                         net (fo=52, routed)          1.623     5.442    nenet_gen[1].row_gen[0].neron_inst/CLK
+    SLICE_X58Y93         FDRE                                         r  nenet_gen[1].row_gen[0].neron_inst/q_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X58Y93         FDRE (Prop_fdre_C_Q)         0.456     5.898 r  nenet_gen[1].row_gen[0].neron_inst/q_reg[0]/Q
+                         net (fo=14, routed)          1.282     7.180    nenet_gen[2].row_gen[1].neron_inst/multOp__0_carry_0[0]
+    SLICE_X60Y96         LUT4 (Prop_lut4_I3_O)        0.124     7.304 r  nenet_gen[2].row_gen[1].neron_inst/multOp__0_carry_i_5__4/O
+                         net (fo=1, routed)           0.000     7.304    nenet_gen[1].row_gen[1].neron_inst/S[1]
+    SLICE_X60Y96         CARRY4 (Prop_carry4_S[1]_O[1])
+                                                      0.230     7.534 r  nenet_gen[1].row_gen[1].neron_inst/multOp__0_carry/O[1]
+                         net (fo=3, routed)           0.828     8.363    nenet_gen[1].row_gen[1].neron_inst/q_reg[1]_0[1]
+    SLICE_X61Y97         LUT4 (Prop_lut4_I0_O)        0.306     8.669 r  nenet_gen[1].row_gen[1].neron_inst/q[2]_i_2__4/O
+                         net (fo=1, routed)           0.665     9.334    nenet_gen[1].row_gen[1].neron_inst/q[2]_i_2__4_n_0
+    SLICE_X61Y97         LUT5 (Prop_lut5_I1_O)        0.124     9.458 r  nenet_gen[1].row_gen[1].neron_inst/q[2]_i_1__6/O
+                         net (fo=1, routed)           0.000     9.458    nenet_gen[1].row_gen[1].neron_inst/q[2]_i_1__6_n_0
+    SLICE_X61Y97         FDRE                                         r  nenet_gen[1].row_gen[1].neron_inst/q_reg[2]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_pin rise edge)   20.000    20.000 r  
+    C15                                               0.000    20.000 r  clk (IN)
+                         net (fo=0)                   0.000    20.000    clk
+    C15                  IBUF (Prop_ibuf_I_O)         1.380    21.380 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           2.155    23.535    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    23.626 r  clk_IBUF_BUFG_inst/O
+                         net (fo=52, routed)          1.506    25.132    nenet_gen[1].row_gen[1].neron_inst/CLK
+    SLICE_X61Y97         FDRE                                         r  nenet_gen[1].row_gen[1].neron_inst/q_reg[2]/C
+                         clock pessimism              0.287    25.418    
+                         clock uncertainty           -0.035    25.383    
+    SLICE_X61Y97         FDRE (Setup_fdre_C_D)        0.029    25.412    nenet_gen[1].row_gen[1].neron_inst/q_reg[2]
+  -------------------------------------------------------------------
+                         required time                         25.412    
+                         arrival time                          -9.458    
+  -------------------------------------------------------------------
+                         slack                                 15.954    
+
+Slack (MET) :             15.975ns  (required time - arrival time)
+  Source:                 nenet_gen[0].row_gen[2].neron_inst/q_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by clk_pin  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            nenet_gen[0].row_gen[3].neron_inst/q_reg[2]_lopt_replica/D
+                            (rising edge-triggered cell FDRE clocked by clk_pin  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             clk_pin
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            20.000ns  (clk_pin rise@20.000ns - clk_pin rise@0.000ns)
+  Data Path Delay:        3.909ns  (logic 1.459ns (37.324%)  route 2.450ns (62.676%))
+  Logic Levels:           3  (CARRY4=1 LUT4=1 LUT5=1)
+  Clock Path Skew:        -0.025ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    5.132ns = ( 25.132 - 20.000 ) 
+    Source Clock Delay      (SCD):    5.443ns
+    Clock Pessimism Removal (CPR):    0.287ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_pin rise edge)    0.000     0.000 r  
+    C15                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    C15                  IBUF (Prop_ibuf_I_O)         1.450     1.450 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           2.273     3.723    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.096     3.819 r  clk_IBUF_BUFG_inst/O
+                         net (fo=52, routed)          1.624     5.443    nenet_gen[0].row_gen[2].neron_inst/CLK
+    SLICE_X62Y96         FDRE                                         r  nenet_gen[0].row_gen[2].neron_inst/q_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X62Y96         FDRE (Prop_fdre_C_Q)         0.456     5.899 r  nenet_gen[0].row_gen[2].neron_inst/q_reg[1]/Q
+                         net (fo=12, routed)          1.185     7.085    nenet_gen[1].row_gen[3].neron_inst/multOp__0_carry_0[1]
+    SLICE_X64Y94         LUT4 (Prop_lut4_I1_O)        0.124     7.209 r  nenet_gen[1].row_gen[3].neron_inst/multOp__0_carry_i_5__2/O
+                         net (fo=1, routed)           0.000     7.209    nenet_gen[0].row_gen[3].neron_inst/S[1]
+    SLICE_X64Y94         CARRY4 (Prop_carry4_S[1]_O[2])
+                                                      0.578     7.787 r  nenet_gen[0].row_gen[3].neron_inst/multOp__0_carry/O[2]
+                         net (fo=2, routed)           0.604     8.390    nenet_gen[0].row_gen[3].neron_inst/O[2]
+    SLICE_X64Y93         LUT5 (Prop_lut5_I3_O)        0.301     8.691 r  nenet_gen[0].row_gen[3].neron_inst/q[2]_i_1__8/O
+                         net (fo=2, routed)           0.661     9.352    nenet_gen[0].row_gen[3].neron_inst/q[2]_i_1__8_n_0
+    SLICE_X64Y94         FDRE                                         r  nenet_gen[0].row_gen[3].neron_inst/q_reg[2]_lopt_replica/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_pin rise edge)   20.000    20.000 r  
+    C15                                               0.000    20.000 r  clk (IN)
+                         net (fo=0)                   0.000    20.000    clk
+    C15                  IBUF (Prop_ibuf_I_O)         1.380    21.380 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           2.155    23.535    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    23.626 r  clk_IBUF_BUFG_inst/O
+                         net (fo=52, routed)          1.506    25.132    nenet_gen[0].row_gen[3].neron_inst/CLK
+    SLICE_X64Y94         FDRE                                         r  nenet_gen[0].row_gen[3].neron_inst/q_reg[2]_lopt_replica/C
+                         clock pessimism              0.287    25.418    
+                         clock uncertainty           -0.035    25.383    
+    SLICE_X64Y94         FDRE (Setup_fdre_C_D)       -0.056    25.327    nenet_gen[0].row_gen[3].neron_inst/q_reg[2]_lopt_replica
+  -------------------------------------------------------------------
+                         required time                         25.327    
+                         arrival time                          -9.352    
+  -------------------------------------------------------------------
+                         slack                                 15.975    
+
+Slack (MET) :             15.995ns  (required time - arrival time)
+  Source:                 nenet_gen[0].row_gen[2].neron_inst/q_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by clk_pin  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            nenet_gen[0].row_gen[3].neron_inst/q_reg[3]_lopt_replica/D
+                            (rising edge-triggered cell FDRE clocked by clk_pin  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             clk_pin
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            20.000ns  (clk_pin rise@20.000ns - clk_pin rise@0.000ns)
+  Data Path Delay:        3.975ns  (logic 1.240ns (31.192%)  route 2.735ns (68.808%))
+  Logic Levels:           4  (CARRY4=1 LUT4=1 LUT5=1 LUT6=1)
+  Clock Path Skew:        -0.025ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    5.132ns = ( 25.132 - 20.000 ) 
+    Source Clock Delay      (SCD):    5.443ns
+    Clock Pessimism Removal (CPR):    0.287ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_pin rise edge)    0.000     0.000 r  
+    C15                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    C15                  IBUF (Prop_ibuf_I_O)         1.450     1.450 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           2.273     3.723    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.096     3.819 r  clk_IBUF_BUFG_inst/O
+                         net (fo=52, routed)          1.624     5.443    nenet_gen[0].row_gen[2].neron_inst/CLK
+    SLICE_X62Y96         FDRE                                         r  nenet_gen[0].row_gen[2].neron_inst/q_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X62Y96         FDRE (Prop_fdre_C_Q)         0.456     5.899 r  nenet_gen[0].row_gen[2].neron_inst/q_reg[1]/Q
+                         net (fo=12, routed)          1.185     7.085    nenet_gen[1].row_gen[3].neron_inst/multOp__0_carry_0[1]
+    SLICE_X64Y94         LUT4 (Prop_lut4_I1_O)        0.124     7.209 r  nenet_gen[1].row_gen[3].neron_inst/multOp__0_carry_i_5__2/O
+                         net (fo=1, routed)           0.000     7.209    nenet_gen[0].row_gen[3].neron_inst/S[1]
+    SLICE_X64Y94         CARRY4 (Prop_carry4_S[1]_O[1])
+                                                      0.230     7.439 r  nenet_gen[0].row_gen[3].neron_inst/multOp__0_carry/O[1]
+                         net (fo=3, routed)           0.833     8.272    nenet_gen[2].row_gen[3].neron_inst/q_reg[3]_2[1]
+    SLICE_X64Y93         LUT6 (Prop_lut6_I3_O)        0.306     8.578 r  nenet_gen[2].row_gen[3].neron_inst/q[3]_i_3__2/O
+                         net (fo=1, routed)           0.717     9.295    nenet_gen[2].row_gen[3].neron_inst/q[3]_i_3__2_n_0
+    SLICE_X65Y93         LUT5 (Prop_lut5_I1_O)        0.124     9.419 r  nenet_gen[2].row_gen[3].neron_inst/q[3]_i_2__8/O
+                         net (fo=2, routed)           0.000     9.419    nenet_gen[0].row_gen[3].neron_inst/q_reg[3]_1[0]
+    SLICE_X65Y93         FDRE                                         r  nenet_gen[0].row_gen[3].neron_inst/q_reg[3]_lopt_replica/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_pin rise edge)   20.000    20.000 r  
+    C15                                               0.000    20.000 r  clk (IN)
+                         net (fo=0)                   0.000    20.000    clk
+    C15                  IBUF (Prop_ibuf_I_O)         1.380    21.380 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           2.155    23.535    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    23.626 r  clk_IBUF_BUFG_inst/O
+                         net (fo=52, routed)          1.506    25.132    nenet_gen[0].row_gen[3].neron_inst/CLK
+    SLICE_X65Y93         FDRE                                         r  nenet_gen[0].row_gen[3].neron_inst/q_reg[3]_lopt_replica/C
+                         clock pessimism              0.287    25.418    
+                         clock uncertainty           -0.035    25.383    
+    SLICE_X65Y93         FDRE (Setup_fdre_C_D)        0.031    25.414    nenet_gen[0].row_gen[3].neron_inst/q_reg[3]_lopt_replica
+  -------------------------------------------------------------------
+                         required time                         25.414    
+                         arrival time                          -9.419    
+  -------------------------------------------------------------------
+                         slack                                 15.995    
+
+Slack (MET) :             16.045ns  (required time - arrival time)
+  Source:                 nenet_gen[0].row_gen[0].neron_inst/q_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by clk_pin  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            nenet_gen[0].row_gen[1].neron_inst/q_reg[3]/D
+                            (rising edge-triggered cell FDRE clocked by clk_pin  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             clk_pin
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            20.000ns  (clk_pin rise@20.000ns - clk_pin rise@0.000ns)
+  Data Path Delay:        3.925ns  (logic 1.648ns (41.990%)  route 2.277ns (58.010%))
+  Logic Levels:           4  (CARRY4=1 LUT4=1 LUT5=1 LUT6=1)
+  Clock Path Skew:        -0.024ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    5.131ns = ( 25.131 - 20.000 ) 
+    Source Clock Delay      (SCD):    5.441ns
+    Clock Pessimism Removal (CPR):    0.287ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_pin rise edge)    0.000     0.000 r  
+    C15                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    C15                  IBUF (Prop_ibuf_I_O)         1.450     1.450 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           2.273     3.723    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.096     3.819 r  clk_IBUF_BUFG_inst/O
+                         net (fo=52, routed)          1.622     5.441    nenet_gen[0].row_gen[0].neron_inst/CLK
+    SLICE_X60Y92         FDRE                                         r  nenet_gen[0].row_gen[0].neron_inst/q_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X60Y92         FDRE (Prop_fdre_C_Q)         0.518     5.959 r  nenet_gen[0].row_gen[0].neron_inst/q_reg[1]/Q
+                         net (fo=12, routed)          1.150     7.109    nenet_gen[1].row_gen[1].neron_inst/multOp__0_carry_0[1]
+    SLICE_X58Y94         LUT4 (Prop_lut4_I1_O)        0.124     7.233 r  nenet_gen[1].row_gen[1].neron_inst/multOp__0_carry_i_5__0/O
+                         net (fo=1, routed)           0.000     7.233    nenet_gen[0].row_gen[1].neron_inst/S[1]
+    SLICE_X58Y94         CARRY4 (Prop_carry4_S[1]_O[2])
+                                                      0.580     7.813 r  nenet_gen[0].row_gen[1].neron_inst/multOp__0_carry/O[2]
+                         net (fo=2, routed)           0.824     8.637    nenet_gen[2].row_gen[1].neron_inst/q_reg[3]_2[2]
+    SLICE_X58Y95         LUT6 (Prop_lut6_I4_O)        0.302     8.939 r  nenet_gen[2].row_gen[1].neron_inst/q[3]_i_3__0/O
+                         net (fo=1, routed)           0.303     9.242    nenet_gen[2].row_gen[1].neron_inst/q[3]_i_3__0_n_0
+    SLICE_X58Y96         LUT5 (Prop_lut5_I1_O)        0.124     9.366 r  nenet_gen[2].row_gen[1].neron_inst/q[3]_i_2__10/O
+                         net (fo=1, routed)           0.000     9.366    nenet_gen[0].row_gen[1].neron_inst/q_reg[3]_1[0]
+    SLICE_X58Y96         FDRE                                         r  nenet_gen[0].row_gen[1].neron_inst/q_reg[3]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_pin rise edge)   20.000    20.000 r  
+    C15                                               0.000    20.000 r  clk (IN)
+                         net (fo=0)                   0.000    20.000    clk
+    C15                  IBUF (Prop_ibuf_I_O)         1.380    21.380 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           2.155    23.535    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    23.626 r  clk_IBUF_BUFG_inst/O
+                         net (fo=52, routed)          1.505    25.131    nenet_gen[0].row_gen[1].neron_inst/CLK
+    SLICE_X58Y96         FDRE                                         r  nenet_gen[0].row_gen[1].neron_inst/q_reg[3]/C
+                         clock pessimism              0.287    25.417    
+                         clock uncertainty           -0.035    25.382    
+    SLICE_X58Y96         FDRE (Setup_fdre_C_D)        0.029    25.411    nenet_gen[0].row_gen[1].neron_inst/q_reg[3]
+  -------------------------------------------------------------------
+                         required time                         25.411    
+                         arrival time                          -9.366    
+  -------------------------------------------------------------------
+                         slack                                 16.045    
+
+Slack (MET) :             16.056ns  (required time - arrival time)
+  Source:                 nenet_gen[2].row_gen[1].neron_inst/q_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by clk_pin  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            nenet_gen[2].row_gen[2].neron_inst/q_reg[3]/D
+                            (rising edge-triggered cell FDRE clocked by clk_pin  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             clk_pin
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            20.000ns  (clk_pin rise@20.000ns - clk_pin rise@0.000ns)
+  Data Path Delay:        3.899ns  (logic 1.266ns (32.469%)  route 2.633ns (67.531%))
+  Logic Levels:           4  (CARRY4=1 LUT3=1 LUT5=1 LUT6=1)
+  Clock Path Skew:        -0.039ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    5.132ns = ( 25.132 - 20.000 ) 
+    Source Clock Delay      (SCD):    5.443ns
+    Clock Pessimism Removal (CPR):    0.273ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_pin rise edge)    0.000     0.000 r  
+    C15                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    C15                  IBUF (Prop_ibuf_I_O)         1.450     1.450 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           2.273     3.723    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.096     3.819 r  clk_IBUF_BUFG_inst/O
+                         net (fo=52, routed)          1.624     5.443    nenet_gen[2].row_gen[1].neron_inst/CLK
+    SLICE_X58Y98         FDRE                                         r  nenet_gen[2].row_gen[1].neron_inst/q_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X58Y98         FDRE (Prop_fdre_C_Q)         0.456     5.899 r  nenet_gen[2].row_gen[1].neron_inst/q_reg[1]/Q
+                         net (fo=12, routed)          1.163     7.062    nenet_gen[0].row_gen[2].neron_inst/multOp__0_carry_1[1]
+    SLICE_X63Y96         LUT6 (Prop_lut6_I2_O)        0.124     7.186 r  nenet_gen[0].row_gen[2].neron_inst/multOp__0_carry_i_7__9/O
+                         net (fo=1, routed)           0.811     7.997    nenet_gen[0].row_gen[2].neron_inst/multOp__0_carry_i_7__9_n_0
+    SLICE_X64Y96         LUT3 (Prop_lut3_I2_O)        0.124     8.121 r  nenet_gen[0].row_gen[2].neron_inst/multOp__0_carry_i_3__9/O
+                         net (fo=1, routed)           0.000     8.121    nenet_gen[2].row_gen[2].neron_inst/S[3]
+    SLICE_X64Y96         CARRY4 (Prop_carry4_S[3]_O[3])
+                                                      0.255     8.376 r  nenet_gen[2].row_gen[2].neron_inst/multOp__0_carry/O[3]
+                         net (fo=1, routed)           0.659     9.035    nenet_gen[1].row_gen[2].neron_inst/O[3]
+    SLICE_X65Y96         LUT5 (Prop_lut5_I3_O)        0.307     9.342 r  nenet_gen[1].row_gen[2].neron_inst/q[3]_i_2__1/O
+                         net (fo=1, routed)           0.000     9.342    nenet_gen[2].row_gen[2].neron_inst/D[0]
+    SLICE_X65Y96         FDRE                                         r  nenet_gen[2].row_gen[2].neron_inst/q_reg[3]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_pin rise edge)   20.000    20.000 r  
+    C15                                               0.000    20.000 r  clk (IN)
+                         net (fo=0)                   0.000    20.000    clk
+    C15                  IBUF (Prop_ibuf_I_O)         1.380    21.380 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           2.155    23.535    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    23.626 r  clk_IBUF_BUFG_inst/O
+                         net (fo=52, routed)          1.506    25.132    nenet_gen[2].row_gen[2].neron_inst/CLK
+    SLICE_X65Y96         FDRE                                         r  nenet_gen[2].row_gen[2].neron_inst/q_reg[3]/C
+                         clock pessimism              0.273    25.404    
+                         clock uncertainty           -0.035    25.369    
+    SLICE_X65Y96         FDRE (Setup_fdre_C_D)        0.029    25.398    nenet_gen[2].row_gen[2].neron_inst/q_reg[3]
+  -------------------------------------------------------------------
+                         required time                         25.398    
+                         arrival time                          -9.342    
+  -------------------------------------------------------------------
+                         slack                                 16.056    
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             0.152ns  (arrival time - required time)
+  Source:                 nenet_gen[2].row_gen[1].neron_inst/q_reg[0]/C
+                            (rising edge-triggered cell FDRE clocked by clk_pin  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            nenet_gen[0].row_gen[1].neron_inst/q_reg[0]/D
+                            (rising edge-triggered cell FDRE clocked by clk_pin  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_pin rise@0.000ns - clk_pin rise@0.000ns)
+  Data Path Delay:        0.285ns  (logic 0.186ns (65.194%)  route 0.099ns (34.806%))
+  Logic Levels:           1  (LUT4=1)
+  Clock Path Skew:        0.013ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.160ns
+    Source Clock Delay      (SCD):    1.637ns
+    Clock Pessimism Removal (CPR):    0.510ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_pin rise edge)    0.000     0.000 r  
+    C15                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    C15                  IBUF (Prop_ibuf_I_O)         0.218     0.218 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.802     1.020    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     1.046 r  clk_IBUF_BUFG_inst/O
+                         net (fo=52, routed)          0.591     1.637    nenet_gen[2].row_gen[1].neron_inst/CLK
+    SLICE_X61Y98         FDRE                                         r  nenet_gen[2].row_gen[1].neron_inst/q_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X61Y98         FDRE (Prop_fdre_C_Q)         0.141     1.778 r  nenet_gen[2].row_gen[1].neron_inst/q_reg[0]/Q
+                         net (fo=14, routed)          0.099     1.877    nenet_gen[0].row_gen[1].neron_inst/q_reg[2]_0[0]
+    SLICE_X60Y98         LUT4 (Prop_lut4_I3_O)        0.045     1.922 r  nenet_gen[0].row_gen[1].neron_inst/q[0]_i_1__10/O
+                         net (fo=1, routed)           0.000     1.922    nenet_gen[0].row_gen[1].neron_inst/q[0]_i_1__10_n_0
+    SLICE_X60Y98         FDRE                                         r  nenet_gen[0].row_gen[1].neron_inst/q_reg[0]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_pin rise edge)    0.000     0.000 r  
+    C15                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    C15                  IBUF (Prop_ibuf_I_O)         0.406     0.406 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.865     1.271    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.300 r  clk_IBUF_BUFG_inst/O
+                         net (fo=52, routed)          0.861     2.160    nenet_gen[0].row_gen[1].neron_inst/CLK
+    SLICE_X60Y98         FDRE                                         r  nenet_gen[0].row_gen[1].neron_inst/q_reg[0]/C
+                         clock pessimism             -0.510     1.650    
+    SLICE_X60Y98         FDRE (Hold_fdre_C_D)         0.120     1.770    nenet_gen[0].row_gen[1].neron_inst/q_reg[0]
+  -------------------------------------------------------------------
+                         required time                         -1.770    
+                         arrival time                           1.922    
+  -------------------------------------------------------------------
+                         slack                                  0.152    
+
+Slack (MET) :             0.231ns  (arrival time - required time)
+  Source:                 nenet_gen[0].row_gen[1].neron_inst/q_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by clk_pin  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            nenet_gen[1].row_gen[1].neron_inst/q_reg[1]/D
+                            (rising edge-triggered cell FDRE clocked by clk_pin  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_pin rise@0.000ns - clk_pin rise@0.000ns)
+  Data Path Delay:        0.339ns  (logic 0.186ns (54.928%)  route 0.153ns (45.072%))
+  Logic Levels:           1  (LUT6=1)
+  Clock Path Skew:        0.016ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.159ns
+    Source Clock Delay      (SCD):    1.636ns
+    Clock Pessimism Removal (CPR):    0.507ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_pin rise edge)    0.000     0.000 r  
+    C15                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    C15                  IBUF (Prop_ibuf_I_O)         0.218     0.218 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.802     1.020    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     1.046 r  clk_IBUF_BUFG_inst/O
+                         net (fo=52, routed)          0.590     1.636    nenet_gen[0].row_gen[1].neron_inst/CLK
+    SLICE_X58Y95         FDRE                                         r  nenet_gen[0].row_gen[1].neron_inst/q_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X58Y95         FDRE (Prop_fdre_C_Q)         0.141     1.777 r  nenet_gen[0].row_gen[1].neron_inst/q_reg[1]/Q
+                         net (fo=12, routed)          0.153     1.929    nenet_gen[1].row_gen[1].neron_inst/q_reg[2]_0[1]
+    SLICE_X59Y96         LUT6 (Prop_lut6_I2_O)        0.045     1.974 r  nenet_gen[1].row_gen[1].neron_inst/q[1]_i_1__6/O
+                         net (fo=1, routed)           0.000     1.974    nenet_gen[1].row_gen[1].neron_inst/q[1]_i_1__6_n_0
+    SLICE_X59Y96         FDRE                                         r  nenet_gen[1].row_gen[1].neron_inst/q_reg[1]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_pin rise edge)    0.000     0.000 r  
+    C15                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    C15                  IBUF (Prop_ibuf_I_O)         0.406     0.406 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.865     1.271    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.300 r  clk_IBUF_BUFG_inst/O
+                         net (fo=52, routed)          0.860     2.159    nenet_gen[1].row_gen[1].neron_inst/CLK
+    SLICE_X59Y96         FDRE                                         r  nenet_gen[1].row_gen[1].neron_inst/q_reg[1]/C
+                         clock pessimism             -0.507     1.652    
+    SLICE_X59Y96         FDRE (Hold_fdre_C_D)         0.092     1.744    nenet_gen[1].row_gen[1].neron_inst/q_reg[1]
+  -------------------------------------------------------------------
+                         required time                         -1.744    
+                         arrival time                           1.974    
+  -------------------------------------------------------------------
+                         slack                                  0.231    
+
+Slack (MET) :             0.241ns  (arrival time - required time)
+  Source:                 nenet_gen[0].row_gen[3].neron_inst/q_reg[2]/C
+                            (rising edge-triggered cell FDRE clocked by clk_pin  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            nenet_gen[1].row_gen[3].neron_inst/q_reg[2]/D
+                            (rising edge-triggered cell FDRE clocked by clk_pin  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_pin rise@0.000ns - clk_pin rise@0.000ns)
+  Data Path Delay:        0.349ns  (logic 0.209ns (59.964%)  route 0.140ns (40.036%))
+  Logic Levels:           1  (LUT5=1)
+  Clock Path Skew:        0.016ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.161ns
+    Source Clock Delay      (SCD):    1.637ns
+    Clock Pessimism Removal (CPR):    0.508ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_pin rise edge)    0.000     0.000 r  
+    C15                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    C15                  IBUF (Prop_ibuf_I_O)         0.218     0.218 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.802     1.020    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     1.046 r  clk_IBUF_BUFG_inst/O
+                         net (fo=52, routed)          0.591     1.637    nenet_gen[0].row_gen[3].neron_inst/CLK
+    SLICE_X64Y93         FDRE                                         r  nenet_gen[0].row_gen[3].neron_inst/q_reg[2]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X64Y93         FDRE (Prop_fdre_C_Q)         0.164     1.801 r  nenet_gen[0].row_gen[3].neron_inst/q_reg[2]/Q
+                         net (fo=7, routed)           0.140     1.940    nenet_gen[1].row_gen[3].neron_inst/q_reg[2]_0[2]
+    SLICE_X65Y94         LUT5 (Prop_lut5_I2_O)        0.045     1.985 r  nenet_gen[1].row_gen[3].neron_inst/q[2]_i_1__4/O
+                         net (fo=1, routed)           0.000     1.985    nenet_gen[1].row_gen[3].neron_inst/q[2]_i_1__4_n_0
+    SLICE_X65Y94         FDRE                                         r  nenet_gen[1].row_gen[3].neron_inst/q_reg[2]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_pin rise edge)    0.000     0.000 r  
+    C15                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    C15                  IBUF (Prop_ibuf_I_O)         0.406     0.406 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.865     1.271    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.300 r  clk_IBUF_BUFG_inst/O
+                         net (fo=52, routed)          0.861     2.161    nenet_gen[1].row_gen[3].neron_inst/CLK
+    SLICE_X65Y94         FDRE                                         r  nenet_gen[1].row_gen[3].neron_inst/q_reg[2]/C
+                         clock pessimism             -0.508     1.653    
+    SLICE_X65Y94         FDRE (Hold_fdre_C_D)         0.092     1.745    nenet_gen[1].row_gen[3].neron_inst/q_reg[2]
+  -------------------------------------------------------------------
+                         required time                         -1.745    
+                         arrival time                           1.985    
+  -------------------------------------------------------------------
+                         slack                                  0.241    
+
+Slack (MET) :             0.257ns  (arrival time - required time)
+  Source:                 nenet_gen[2].row_gen[0].neron_inst/q_reg[2]/C
+                            (rising edge-triggered cell FDRE clocked by clk_pin  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            nenet_gen[0].row_gen[0].neron_inst/q_reg[2]/D
+                            (rising edge-triggered cell FDRE clocked by clk_pin  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_pin rise@0.000ns - clk_pin rise@0.000ns)
+  Data Path Delay:        0.393ns  (logic 0.186ns (47.294%)  route 0.207ns (52.706%))
+  Logic Levels:           1  (LUT5=1)
+  Clock Path Skew:        0.015ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.158ns
+    Source Clock Delay      (SCD):    1.636ns
+    Clock Pessimism Removal (CPR):    0.507ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_pin rise edge)    0.000     0.000 r  
+    C15                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    C15                  IBUF (Prop_ibuf_I_O)         0.218     0.218 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.802     1.020    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     1.046 r  clk_IBUF_BUFG_inst/O
+                         net (fo=52, routed)          0.590     1.636    nenet_gen[2].row_gen[0].neron_inst/CLK
+    SLICE_X59Y95         FDRE                                         r  nenet_gen[2].row_gen[0].neron_inst/q_reg[2]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X59Y95         FDRE (Prop_fdre_C_Q)         0.141     1.777 r  nenet_gen[2].row_gen[0].neron_inst/q_reg[2]/Q
+                         net (fo=7, routed)           0.207     1.984    nenet_gen[0].row_gen[0].neron_inst/q_reg[2]_0[2]
+    SLICE_X60Y92         LUT5 (Prop_lut5_I2_O)        0.045     2.029 r  nenet_gen[0].row_gen[0].neron_inst/q[2]_i_1/O
+                         net (fo=1, routed)           0.000     2.029    nenet_gen[0].row_gen[0].neron_inst/q[2]_i_1_n_0
+    SLICE_X60Y92         FDRE                                         r  nenet_gen[0].row_gen[0].neron_inst/q_reg[2]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_pin rise edge)    0.000     0.000 r  
+    C15                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    C15                  IBUF (Prop_ibuf_I_O)         0.406     0.406 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.865     1.271    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.300 r  clk_IBUF_BUFG_inst/O
+                         net (fo=52, routed)          0.859     2.158    nenet_gen[0].row_gen[0].neron_inst/CLK
+    SLICE_X60Y92         FDRE                                         r  nenet_gen[0].row_gen[0].neron_inst/q_reg[2]/C
+                         clock pessimism             -0.507     1.651    
+    SLICE_X60Y92         FDRE (Hold_fdre_C_D)         0.121     1.772    nenet_gen[0].row_gen[0].neron_inst/q_reg[2]
+  -------------------------------------------------------------------
+                         required time                         -1.772    
+                         arrival time                           2.029    
+  -------------------------------------------------------------------
+                         slack                                  0.257    
+
+Slack (MET) :             0.277ns  (arrival time - required time)
+  Source:                 nenet_gen[1].row_gen[3].neron_inst/q_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by clk_pin  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            nenet_gen[2].row_gen[3].neron_inst/q_reg[1]/D
+                            (rising edge-triggered cell FDRE clocked by clk_pin  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_pin rise@0.000ns - clk_pin rise@0.000ns)
+  Data Path Delay:        0.383ns  (logic 0.186ns (48.532%)  route 0.197ns (51.468%))
+  Logic Levels:           1  (LUT6=1)
+  Clock Path Skew:        0.015ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.160ns
+    Source Clock Delay      (SCD):    1.637ns
+    Clock Pessimism Removal (CPR):    0.508ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_pin rise edge)    0.000     0.000 r  
+    C15                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    C15                  IBUF (Prop_ibuf_I_O)         0.218     0.218 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.802     1.020    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     1.046 r  clk_IBUF_BUFG_inst/O
+                         net (fo=52, routed)          0.591     1.637    nenet_gen[1].row_gen[3].neron_inst/CLK
+    SLICE_X65Y94         FDRE                                         r  nenet_gen[1].row_gen[3].neron_inst/q_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X65Y94         FDRE (Prop_fdre_C_Q)         0.141     1.778 r  nenet_gen[1].row_gen[3].neron_inst/q_reg[1]/Q
+                         net (fo=12, routed)          0.197     1.975    nenet_gen[2].row_gen[3].neron_inst/q_reg[2]_0[1]
+    SLICE_X65Y92         LUT6 (Prop_lut6_I2_O)        0.045     2.020 r  nenet_gen[2].row_gen[3].neron_inst/q[1]_i_1__0/O
+                         net (fo=1, routed)           0.000     2.020    nenet_gen[2].row_gen[3].neron_inst/q[1]_i_1__0_n_0
+    SLICE_X65Y92         FDRE                                         r  nenet_gen[2].row_gen[3].neron_inst/q_reg[1]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_pin rise edge)    0.000     0.000 r  
+    C15                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    C15                  IBUF (Prop_ibuf_I_O)         0.406     0.406 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.865     1.271    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.300 r  clk_IBUF_BUFG_inst/O
+                         net (fo=52, routed)          0.860     2.160    nenet_gen[2].row_gen[3].neron_inst/CLK
+    SLICE_X65Y92         FDRE                                         r  nenet_gen[2].row_gen[3].neron_inst/q_reg[1]/C
+                         clock pessimism             -0.508     1.652    
+    SLICE_X65Y92         FDRE (Hold_fdre_C_D)         0.091     1.743    nenet_gen[2].row_gen[3].neron_inst/q_reg[1]
+  -------------------------------------------------------------------
+                         required time                         -1.743    
+                         arrival time                           2.020    
+  -------------------------------------------------------------------
+                         slack                                  0.277    
+
+Slack (MET) :             0.295ns  (arrival time - required time)
+  Source:                 nenet_gen[2].row_gen[3].neron_inst/q_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by clk_pin  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            nenet_gen[0].row_gen[3].neron_inst/q_reg[1]/D
+                            (rising edge-triggered cell FDRE clocked by clk_pin  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_pin rise@0.000ns - clk_pin rise@0.000ns)
+  Data Path Delay:        0.432ns  (logic 0.186ns (43.056%)  route 0.246ns (56.944%))
+  Logic Levels:           1  (LUT6=1)
+  Clock Path Skew:        0.017ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.161ns
+    Source Clock Delay      (SCD):    1.636ns
+    Clock Pessimism Removal (CPR):    0.508ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_pin rise edge)    0.000     0.000 r  
+    C15                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    C15                  IBUF (Prop_ibuf_I_O)         0.218     0.218 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.802     1.020    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     1.046 r  clk_IBUF_BUFG_inst/O
+                         net (fo=52, routed)          0.590     1.636    nenet_gen[2].row_gen[3].neron_inst/CLK
+    SLICE_X65Y92         FDRE                                         r  nenet_gen[2].row_gen[3].neron_inst/q_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X65Y92         FDRE (Prop_fdre_C_Q)         0.141     1.777 r  nenet_gen[2].row_gen[3].neron_inst/q_reg[1]/Q
+                         net (fo=12, routed)          0.246     2.023    nenet_gen[0].row_gen[3].neron_inst/q_reg[2]_0[1]
+    SLICE_X64Y93         LUT6 (Prop_lut6_I2_O)        0.045     2.068 r  nenet_gen[0].row_gen[3].neron_inst/q[1]_i_1__8/O
+                         net (fo=2, routed)           0.000     2.068    nenet_gen[0].row_gen[3].neron_inst/q[1]_i_1__8_n_0
+    SLICE_X64Y93         FDRE                                         r  nenet_gen[0].row_gen[3].neron_inst/q_reg[1]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_pin rise edge)    0.000     0.000 r  
+    C15                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    C15                  IBUF (Prop_ibuf_I_O)         0.406     0.406 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.865     1.271    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.300 r  clk_IBUF_BUFG_inst/O
+                         net (fo=52, routed)          0.861     2.161    nenet_gen[0].row_gen[3].neron_inst/CLK
+    SLICE_X64Y93         FDRE                                         r  nenet_gen[0].row_gen[3].neron_inst/q_reg[1]/C
+                         clock pessimism             -0.508     1.653    
+    SLICE_X64Y93         FDRE (Hold_fdre_C_D)         0.120     1.773    nenet_gen[0].row_gen[3].neron_inst/q_reg[1]
+  -------------------------------------------------------------------
+                         required time                         -1.773    
+                         arrival time                           2.068    
+  -------------------------------------------------------------------
+                         slack                                  0.295    
+
+Slack (MET) :             0.298ns  (arrival time - required time)
+  Source:                 nenet_gen[1].row_gen[2].neron_inst/q_reg[3]/C
+                            (rising edge-triggered cell FDRE clocked by clk_pin  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            nenet_gen[2].row_gen[2].neron_inst/q_reg[3]/D
+                            (rising edge-triggered cell FDRE clocked by clk_pin  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_pin rise@0.000ns - clk_pin rise@0.000ns)
+  Data Path Delay:        0.405ns  (logic 0.186ns (45.954%)  route 0.219ns (54.046%))
+  Logic Levels:           1  (LUT5=1)
+  Clock Path Skew:        0.016ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.161ns
+    Source Clock Delay      (SCD):    1.637ns
+    Clock Pessimism Removal (CPR):    0.508ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_pin rise edge)    0.000     0.000 r  
+    C15                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    C15                  IBUF (Prop_ibuf_I_O)         0.218     0.218 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.802     1.020    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     1.046 r  clk_IBUF_BUFG_inst/O
+                         net (fo=52, routed)          0.591     1.637    nenet_gen[1].row_gen[2].neron_inst/CLK
+    SLICE_X63Y95         FDRE                                         r  nenet_gen[1].row_gen[2].neron_inst/q_reg[3]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X63Y95         FDRE (Prop_fdre_C_Q)         0.141     1.778 r  nenet_gen[1].row_gen[2].neron_inst/q_reg[3]/Q
+                         net (fo=3, routed)           0.219     1.996    nenet_gen[1].row_gen[2].neron_inst/Q[3]
+    SLICE_X65Y96         LUT5 (Prop_lut5_I2_O)        0.045     2.041 r  nenet_gen[1].row_gen[2].neron_inst/q[3]_i_2__1/O
+                         net (fo=1, routed)           0.000     2.041    nenet_gen[2].row_gen[2].neron_inst/D[0]
+    SLICE_X65Y96         FDRE                                         r  nenet_gen[2].row_gen[2].neron_inst/q_reg[3]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_pin rise edge)    0.000     0.000 r  
+    C15                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    C15                  IBUF (Prop_ibuf_I_O)         0.406     0.406 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.865     1.271    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.300 r  clk_IBUF_BUFG_inst/O
+                         net (fo=52, routed)          0.861     2.161    nenet_gen[2].row_gen[2].neron_inst/CLK
+    SLICE_X65Y96         FDRE                                         r  nenet_gen[2].row_gen[2].neron_inst/q_reg[3]/C
+                         clock pessimism             -0.508     1.653    
+    SLICE_X65Y96         FDRE (Hold_fdre_C_D)         0.091     1.744    nenet_gen[2].row_gen[2].neron_inst/q_reg[3]
+  -------------------------------------------------------------------
+                         required time                         -1.744    
+                         arrival time                           2.041    
+  -------------------------------------------------------------------
+                         slack                                  0.298    
+
+Slack (MET) :             0.302ns  (arrival time - required time)
+  Source:                 nenet_gen[1].row_gen[2].neron_inst/q_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by clk_pin  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            nenet_gen[2].row_gen[2].neron_inst/q_reg[1]/D
+                            (rising edge-triggered cell FDRE clocked by clk_pin  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_pin rise@0.000ns - clk_pin rise@0.000ns)
+  Data Path Delay:        0.439ns  (logic 0.186ns (42.342%)  route 0.253ns (57.658%))
+  Logic Levels:           1  (LUT6=1)
+  Clock Path Skew:        0.016ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.161ns
+    Source Clock Delay      (SCD):    1.637ns
+    Clock Pessimism Removal (CPR):    0.508ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_pin rise edge)    0.000     0.000 r  
+    C15                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    C15                  IBUF (Prop_ibuf_I_O)         0.218     0.218 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.802     1.020    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     1.046 r  clk_IBUF_BUFG_inst/O
+                         net (fo=52, routed)          0.591     1.637    nenet_gen[1].row_gen[2].neron_inst/CLK
+    SLICE_X63Y95         FDRE                                         r  nenet_gen[1].row_gen[2].neron_inst/q_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X63Y95         FDRE (Prop_fdre_C_Q)         0.141     1.778 r  nenet_gen[1].row_gen[2].neron_inst/q_reg[1]/Q
+                         net (fo=12, routed)          0.253     2.031    nenet_gen[2].row_gen[2].neron_inst/q_reg[2]_0[1]
+    SLICE_X64Y95         LUT6 (Prop_lut6_I2_O)        0.045     2.076 r  nenet_gen[2].row_gen[2].neron_inst/q[1]_i_1__1/O
+                         net (fo=1, routed)           0.000     2.076    nenet_gen[2].row_gen[2].neron_inst/q[1]_i_1__1_n_0
+    SLICE_X64Y95         FDRE                                         r  nenet_gen[2].row_gen[2].neron_inst/q_reg[1]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_pin rise edge)    0.000     0.000 r  
+    C15                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    C15                  IBUF (Prop_ibuf_I_O)         0.406     0.406 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.865     1.271    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.300 r  clk_IBUF_BUFG_inst/O
+                         net (fo=52, routed)          0.861     2.161    nenet_gen[2].row_gen[2].neron_inst/CLK
+    SLICE_X64Y95         FDRE                                         r  nenet_gen[2].row_gen[2].neron_inst/q_reg[1]/C
+                         clock pessimism             -0.508     1.653    
+    SLICE_X64Y95         FDRE (Hold_fdre_C_D)         0.121     1.774    nenet_gen[2].row_gen[2].neron_inst/q_reg[1]
+  -------------------------------------------------------------------
+                         required time                         -1.774    
+                         arrival time                           2.076    
+  -------------------------------------------------------------------
+                         slack                                  0.302    
+
+Slack (MET) :             0.305ns  (arrival time - required time)
+  Source:                 nenet_gen[1].row_gen[1].neron_inst/q_reg[3]/C
+                            (rising edge-triggered cell FDRE clocked by clk_pin  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            nenet_gen[2].row_gen[1].neron_inst/q_reg[3]/D
+                            (rising edge-triggered cell FDRE clocked by clk_pin  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_pin rise@0.000ns - clk_pin rise@0.000ns)
+  Data Path Delay:        0.412ns  (logic 0.209ns (50.674%)  route 0.203ns (49.326%))
+  Logic Levels:           1  (LUT5=1)
+  Clock Path Skew:        0.016ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.160ns
+    Source Clock Delay      (SCD):    1.637ns
+    Clock Pessimism Removal (CPR):    0.507ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_pin rise edge)    0.000     0.000 r  
+    C15                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    C15                  IBUF (Prop_ibuf_I_O)         0.218     0.218 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.802     1.020    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     1.046 r  clk_IBUF_BUFG_inst/O
+                         net (fo=52, routed)          0.591     1.637    nenet_gen[1].row_gen[1].neron_inst/CLK
+    SLICE_X60Y97         FDRE                                         r  nenet_gen[1].row_gen[1].neron_inst/q_reg[3]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X60Y97         FDRE (Prop_fdre_C_Q)         0.164     1.801 r  nenet_gen[1].row_gen[1].neron_inst/q_reg[3]/Q
+                         net (fo=3, routed)           0.203     2.004    nenet_gen[1].row_gen[1].neron_inst/Q[3]
+    SLICE_X58Y97         LUT5 (Prop_lut5_I2_O)        0.045     2.049 r  nenet_gen[1].row_gen[1].neron_inst/q[3]_i_2__2/O
+                         net (fo=1, routed)           0.000     2.049    nenet_gen[2].row_gen[1].neron_inst/D[0]
+    SLICE_X58Y97         FDRE                                         r  nenet_gen[2].row_gen[1].neron_inst/q_reg[3]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_pin rise edge)    0.000     0.000 r  
+    C15                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    C15                  IBUF (Prop_ibuf_I_O)         0.406     0.406 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.865     1.271    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.300 r  clk_IBUF_BUFG_inst/O
+                         net (fo=52, routed)          0.861     2.160    nenet_gen[2].row_gen[1].neron_inst/CLK
+    SLICE_X58Y97         FDRE                                         r  nenet_gen[2].row_gen[1].neron_inst/q_reg[3]/C
+                         clock pessimism             -0.507     1.653    
+    SLICE_X58Y97         FDRE (Hold_fdre_C_D)         0.091     1.744    nenet_gen[2].row_gen[1].neron_inst/q_reg[3]
+  -------------------------------------------------------------------
+                         required time                         -1.744    
+                         arrival time                           2.049    
+  -------------------------------------------------------------------
+                         slack                                  0.305    
+
+Slack (MET) :             0.309ns  (arrival time - required time)
+  Source:                 nenet_gen[2].row_gen[2].neron_inst/q_reg[2]/C
+                            (rising edge-triggered cell FDRE clocked by clk_pin  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            nenet_gen[0].row_gen[2].neron_inst/q_reg[2]/D
+                            (rising edge-triggered cell FDRE clocked by clk_pin  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_pin rise@0.000ns - clk_pin rise@0.000ns)
+  Data Path Delay:        0.417ns  (logic 0.186ns (44.556%)  route 0.231ns (55.444%))
+  Logic Levels:           1  (LUT5=1)
+  Clock Path Skew:        0.017ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.162ns
+    Source Clock Delay      (SCD):    1.637ns
+    Clock Pessimism Removal (CPR):    0.508ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_pin rise edge)    0.000     0.000 r  
+    C15                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    C15                  IBUF (Prop_ibuf_I_O)         0.218     0.218 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.802     1.020    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     1.046 r  clk_IBUF_BUFG_inst/O
+                         net (fo=52, routed)          0.591     1.637    nenet_gen[2].row_gen[2].neron_inst/CLK
+    SLICE_X65Y96         FDRE                                         r  nenet_gen[2].row_gen[2].neron_inst/q_reg[2]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X65Y96         FDRE (Prop_fdre_C_Q)         0.141     1.778 r  nenet_gen[2].row_gen[2].neron_inst/q_reg[2]/Q
+                         net (fo=7, routed)           0.231     2.009    nenet_gen[0].row_gen[2].neron_inst/q_reg[2]_0[2]
+    SLICE_X62Y97         LUT5 (Prop_lut5_I2_O)        0.045     2.054 r  nenet_gen[0].row_gen[2].neron_inst/q[2]_i_1__9/O
+                         net (fo=1, routed)           0.000     2.054    nenet_gen[0].row_gen[2].neron_inst/q[2]_i_1__9_n_0
+    SLICE_X62Y97         FDRE                                         r  nenet_gen[0].row_gen[2].neron_inst/q_reg[2]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_pin rise edge)    0.000     0.000 r  
+    C15                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    C15                  IBUF (Prop_ibuf_I_O)         0.406     0.406 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.865     1.271    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.300 r  clk_IBUF_BUFG_inst/O
+                         net (fo=52, routed)          0.863     2.162    nenet_gen[0].row_gen[2].neron_inst/CLK
+    SLICE_X62Y97         FDRE                                         r  nenet_gen[0].row_gen[2].neron_inst/q_reg[2]/C
+                         clock pessimism             -0.508     1.654    
+    SLICE_X62Y97         FDRE (Hold_fdre_C_D)         0.091     1.745    nenet_gen[0].row_gen[2].neron_inst/q_reg[2]
+  -------------------------------------------------------------------
+                         required time                         -1.745    
+                         arrival time                           2.054    
+  -------------------------------------------------------------------
+                         slack                                  0.309    
+
+
+
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         clk_pin
+Waveform(ns):       { 0.000 10.000 }
+Period(ns):         20.000
+Sources:            { clk }
+
+Check Type        Corner  Lib Pin  Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location        Pin
+Min Period        n/a     BUFG/I   n/a            2.155         20.000      17.845     BUFGCTRL_X0Y16  clk_IBUF_BUFG_inst/I
+Min Period        n/a     FDRE/C   n/a            1.000         20.000      19.000     SLICE_X60Y92    nenet_gen[0].row_gen[0].neron_inst/q_reg[0]/C
+Min Period        n/a     FDRE/C   n/a            1.000         20.000      19.000     SLICE_X60Y92    nenet_gen[0].row_gen[0].neron_inst/q_reg[1]/C
+Min Period        n/a     FDRE/C   n/a            1.000         20.000      19.000     SLICE_X60Y92    nenet_gen[0].row_gen[0].neron_inst/q_reg[2]/C
+Min Period        n/a     FDRE/C   n/a            1.000         20.000      19.000     SLICE_X59Y93    nenet_gen[0].row_gen[0].neron_inst/q_reg[3]/C
+Min Period        n/a     FDRE/C   n/a            1.000         20.000      19.000     SLICE_X60Y98    nenet_gen[0].row_gen[1].neron_inst/q_reg[0]/C
+Min Period        n/a     FDRE/C   n/a            1.000         20.000      19.000     SLICE_X58Y95    nenet_gen[0].row_gen[1].neron_inst/q_reg[1]/C
+Min Period        n/a     FDRE/C   n/a            1.000         20.000      19.000     SLICE_X58Y95    nenet_gen[0].row_gen[1].neron_inst/q_reg[2]/C
+Min Period        n/a     FDRE/C   n/a            1.000         20.000      19.000     SLICE_X58Y96    nenet_gen[0].row_gen[1].neron_inst/q_reg[3]/C
+Min Period        n/a     FDRE/C   n/a            1.000         20.000      19.000     SLICE_X62Y96    nenet_gen[0].row_gen[2].neron_inst/q_reg[0]/C
+Low Pulse Width   Slow    FDRE/C   n/a            0.500         10.000      9.500      SLICE_X60Y92    nenet_gen[0].row_gen[0].neron_inst/q_reg[0]/C
+Low Pulse Width   Fast    FDRE/C   n/a            0.500         10.000      9.500      SLICE_X60Y92    nenet_gen[0].row_gen[0].neron_inst/q_reg[0]/C
+Low Pulse Width   Slow    FDRE/C   n/a            0.500         10.000      9.500      SLICE_X60Y92    nenet_gen[0].row_gen[0].neron_inst/q_reg[1]/C
+Low Pulse Width   Fast    FDRE/C   n/a            0.500         10.000      9.500      SLICE_X60Y92    nenet_gen[0].row_gen[0].neron_inst/q_reg[1]/C
+Low Pulse Width   Slow    FDRE/C   n/a            0.500         10.000      9.500      SLICE_X60Y92    nenet_gen[0].row_gen[0].neron_inst/q_reg[2]/C
+Low Pulse Width   Fast    FDRE/C   n/a            0.500         10.000      9.500      SLICE_X60Y92    nenet_gen[0].row_gen[0].neron_inst/q_reg[2]/C
+Low Pulse Width   Slow    FDRE/C   n/a            0.500         10.000      9.500      SLICE_X59Y93    nenet_gen[0].row_gen[0].neron_inst/q_reg[3]/C
+Low Pulse Width   Fast    FDRE/C   n/a            0.500         10.000      9.500      SLICE_X59Y93    nenet_gen[0].row_gen[0].neron_inst/q_reg[3]/C
+Low Pulse Width   Slow    FDRE/C   n/a            0.500         10.000      9.500      SLICE_X60Y98    nenet_gen[0].row_gen[1].neron_inst/q_reg[0]/C
+Low Pulse Width   Fast    FDRE/C   n/a            0.500         10.000      9.500      SLICE_X60Y98    nenet_gen[0].row_gen[1].neron_inst/q_reg[0]/C
+High Pulse Width  Slow    FDRE/C   n/a            0.500         10.000      9.500      SLICE_X60Y92    nenet_gen[0].row_gen[0].neron_inst/q_reg[0]/C
+High Pulse Width  Fast    FDRE/C   n/a            0.500         10.000      9.500      SLICE_X60Y92    nenet_gen[0].row_gen[0].neron_inst/q_reg[0]/C
+High Pulse Width  Slow    FDRE/C   n/a            0.500         10.000      9.500      SLICE_X60Y92    nenet_gen[0].row_gen[0].neron_inst/q_reg[1]/C
+High Pulse Width  Fast    FDRE/C   n/a            0.500         10.000      9.500      SLICE_X60Y92    nenet_gen[0].row_gen[0].neron_inst/q_reg[1]/C
+High Pulse Width  Slow    FDRE/C   n/a            0.500         10.000      9.500      SLICE_X60Y92    nenet_gen[0].row_gen[0].neron_inst/q_reg[2]/C
+High Pulse Width  Fast    FDRE/C   n/a            0.500         10.000      9.500      SLICE_X60Y92    nenet_gen[0].row_gen[0].neron_inst/q_reg[2]/C
+High Pulse Width  Slow    FDRE/C   n/a            0.500         10.000      9.500      SLICE_X59Y93    nenet_gen[0].row_gen[0].neron_inst/q_reg[3]/C
+High Pulse Width  Fast    FDRE/C   n/a            0.500         10.000      9.500      SLICE_X59Y93    nenet_gen[0].row_gen[0].neron_inst/q_reg[3]/C
+High Pulse Width  Slow    FDRE/C   n/a            0.500         10.000      9.500      SLICE_X60Y98    nenet_gen[0].row_gen[1].neron_inst/q_reg[0]/C
+High Pulse Width  Fast    FDRE/C   n/a            0.500         10.000      9.500      SLICE_X60Y98    nenet_gen[0].row_gen[1].neron_inst/q_reg[0]/C
+
+
+
+--------------------------------------------------------------------------------------
+Path Group:  (none)
+From Clock:  clk_pin
+  To Clock:  
+
+Max Delay             4 Endpoints
+Min Delay             4 Endpoints
+--------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack:                    inf
+  Source:                 nenet_gen[0].row_gen[3].neron_inst/q_reg[2]_lopt_replica/C
+                            (rising edge-triggered cell FDRE clocked by clk_pin  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            nno[2]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        8.463ns  (logic 4.030ns (47.616%)  route 4.433ns (52.384%))
+  Logic Levels:           1  (OBUF=1)
+  Clock Uncertainty:      0.025ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.050ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_pin rise edge)    0.000     0.000 r  
+    C15                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    C15                  IBUF (Prop_ibuf_I_O)         1.450     1.450 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           2.273     3.723    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.096     3.819 r  clk_IBUF_BUFG_inst/O
+                         net (fo=52, routed)          1.624     5.443    nenet_gen[0].row_gen[3].neron_inst/CLK
+    SLICE_X64Y94         FDRE                                         r  nenet_gen[0].row_gen[3].neron_inst/q_reg[2]_lopt_replica/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X64Y94         FDRE (Prop_fdre_C_Q)         0.518     5.961 r  nenet_gen[0].row_gen[3].neron_inst/q_reg[2]_lopt_replica/Q
+                         net (fo=1, routed)           4.433    10.395    lopt_2
+    A16                  OBUF (Prop_obuf_I_O)         3.512    13.906 r  nno_OBUF[2]_inst/O
+                         net (fo=0)                   0.000    13.906    nno[2]
+    A16                                                               r  nno[2] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 nenet_gen[0].row_gen[3].neron_inst/q_reg[0]_lopt_replica/C
+                            (rising edge-triggered cell FDRE clocked by clk_pin  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            nno[0]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        6.040ns  (logic 3.968ns (65.696%)  route 2.072ns (34.304%))
+  Logic Levels:           1  (OBUF=1)
+  Clock Uncertainty:      0.025ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.050ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_pin rise edge)    0.000     0.000 r  
+    C15                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    C15                  IBUF (Prop_ibuf_I_O)         1.450     1.450 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           2.273     3.723    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.096     3.819 r  clk_IBUF_BUFG_inst/O
+                         net (fo=52, routed)          1.624     5.443    nenet_gen[0].row_gen[3].neron_inst/CLK
+    SLICE_X65Y93         FDRE                                         r  nenet_gen[0].row_gen[3].neron_inst/q_reg[0]_lopt_replica/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X65Y93         FDRE (Prop_fdre_C_Q)         0.456     5.899 r  nenet_gen[0].row_gen[3].neron_inst/q_reg[0]_lopt_replica/Q
+                         net (fo=1, routed)           2.072     7.971    lopt
+    M3                   OBUF (Prop_obuf_I_O)         3.512    11.484 r  nno_OBUF[0]_inst/O
+                         net (fo=0)                   0.000    11.484    nno[0]
+    M3                                                                r  nno[0] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 nenet_gen[0].row_gen[3].neron_inst/q_reg[3]_lopt_replica/C
+                            (rising edge-triggered cell FDRE clocked by clk_pin  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            nno[3]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        5.994ns  (logic 3.966ns (66.173%)  route 2.028ns (33.827%))
+  Logic Levels:           1  (OBUF=1)
+  Clock Uncertainty:      0.025ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.050ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_pin rise edge)    0.000     0.000 r  
+    C15                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    C15                  IBUF (Prop_ibuf_I_O)         1.450     1.450 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           2.273     3.723    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.096     3.819 r  clk_IBUF_BUFG_inst/O
+                         net (fo=52, routed)          1.624     5.443    nenet_gen[0].row_gen[3].neron_inst/CLK
+    SLICE_X65Y93         FDRE                                         r  nenet_gen[0].row_gen[3].neron_inst/q_reg[3]_lopt_replica/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X65Y93         FDRE (Prop_fdre_C_Q)         0.456     5.899 r  nenet_gen[0].row_gen[3].neron_inst/q_reg[3]_lopt_replica/Q
+                         net (fo=1, routed)           2.028     7.927    lopt_3
+    K3                   OBUF (Prop_obuf_I_O)         3.510    11.437 r  nno_OBUF[3]_inst/O
+                         net (fo=0)                   0.000    11.437    nno[3]
+    K3                                                                r  nno[3] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 nenet_gen[0].row_gen[3].neron_inst/q_reg[1]_lopt_replica/C
+                            (rising edge-triggered cell FDRE clocked by clk_pin  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            nno[1]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        5.941ns  (logic 4.021ns (67.689%)  route 1.920ns (32.311%))
+  Logic Levels:           1  (OBUF=1)
+  Clock Uncertainty:      0.025ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.050ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_pin rise edge)    0.000     0.000 r  
+    C15                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    C15                  IBUF (Prop_ibuf_I_O)         1.450     1.450 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           2.273     3.723    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.096     3.819 r  clk_IBUF_BUFG_inst/O
+                         net (fo=52, routed)          1.624     5.443    nenet_gen[0].row_gen[3].neron_inst/CLK
+    SLICE_X64Y93         FDRE                                         r  nenet_gen[0].row_gen[3].neron_inst/q_reg[1]_lopt_replica/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X64Y93         FDRE (Prop_fdre_C_Q)         0.518     5.961 r  nenet_gen[0].row_gen[3].neron_inst/q_reg[1]_lopt_replica/Q
+                         net (fo=1, routed)           1.920     7.881    lopt_1
+    L3                   OBUF (Prop_obuf_I_O)         3.503    11.384 r  nno_OBUF[1]_inst/O
+                         net (fo=0)                   0.000    11.384    nno[1]
+    L3                                                                r  nno[1] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack:                    inf
+  Source:                 nenet_gen[0].row_gen[3].neron_inst/q_reg[3]_lopt_replica/C
+                            (rising edge-triggered cell FDRE clocked by clk_pin  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            nno[3]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        1.809ns  (logic 1.352ns (74.763%)  route 0.457ns (25.237%))
+  Logic Levels:           1  (OBUF=1)
+  Clock Uncertainty:      0.025ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.050ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_pin rise edge)    0.000     0.000 r  
+    C15                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    C15                  IBUF (Prop_ibuf_I_O)         0.218     0.218 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.802     1.020    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     1.046 r  clk_IBUF_BUFG_inst/O
+                         net (fo=52, routed)          0.591     1.637    nenet_gen[0].row_gen[3].neron_inst/CLK
+    SLICE_X65Y93         FDRE                                         r  nenet_gen[0].row_gen[3].neron_inst/q_reg[3]_lopt_replica/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X65Y93         FDRE (Prop_fdre_C_Q)         0.141     1.778 r  nenet_gen[0].row_gen[3].neron_inst/q_reg[3]_lopt_replica/Q
+                         net (fo=1, routed)           0.457     2.234    lopt_3
+    K3                   OBUF (Prop_obuf_I_O)         1.211     3.446 r  nno_OBUF[3]_inst/O
+                         net (fo=0)                   0.000     3.446    nno[3]
+    K3                                                                r  nno[3] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 nenet_gen[0].row_gen[3].neron_inst/q_reg[1]_lopt_replica/C
+                            (rising edge-triggered cell FDRE clocked by clk_pin  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            nno[1]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        1.813ns  (logic 1.368ns (75.479%)  route 0.445ns (24.521%))
+  Logic Levels:           1  (OBUF=1)
+  Clock Uncertainty:      0.025ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.050ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_pin rise edge)    0.000     0.000 r  
+    C15                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    C15                  IBUF (Prop_ibuf_I_O)         0.218     0.218 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.802     1.020    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     1.046 r  clk_IBUF_BUFG_inst/O
+                         net (fo=52, routed)          0.591     1.637    nenet_gen[0].row_gen[3].neron_inst/CLK
+    SLICE_X64Y93         FDRE                                         r  nenet_gen[0].row_gen[3].neron_inst/q_reg[1]_lopt_replica/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X64Y93         FDRE (Prop_fdre_C_Q)         0.164     1.801 r  nenet_gen[0].row_gen[3].neron_inst/q_reg[1]_lopt_replica/Q
+                         net (fo=1, routed)           0.445     2.245    lopt_1
+    L3                   OBUF (Prop_obuf_I_O)         1.204     3.450 r  nno_OBUF[1]_inst/O
+                         net (fo=0)                   0.000     3.450    nno[1]
+    L3                                                                r  nno[1] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 nenet_gen[0].row_gen[3].neron_inst/q_reg[0]_lopt_replica/C
+                            (rising edge-triggered cell FDRE clocked by clk_pin  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            nno[0]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        1.846ns  (logic 1.354ns (73.348%)  route 0.492ns (26.652%))
+  Logic Levels:           1  (OBUF=1)
+  Clock Uncertainty:      0.025ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.050ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_pin rise edge)    0.000     0.000 r  
+    C15                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    C15                  IBUF (Prop_ibuf_I_O)         0.218     0.218 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.802     1.020    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     1.046 r  clk_IBUF_BUFG_inst/O
+                         net (fo=52, routed)          0.591     1.637    nenet_gen[0].row_gen[3].neron_inst/CLK
+    SLICE_X65Y93         FDRE                                         r  nenet_gen[0].row_gen[3].neron_inst/q_reg[0]_lopt_replica/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X65Y93         FDRE (Prop_fdre_C_Q)         0.141     1.778 r  nenet_gen[0].row_gen[3].neron_inst/q_reg[0]_lopt_replica/Q
+                         net (fo=1, routed)           0.492     2.270    lopt
+    M3                   OBUF (Prop_obuf_I_O)         1.213     3.483 r  nno_OBUF[0]_inst/O
+                         net (fo=0)                   0.000     3.483    nno[0]
+    M3                                                                r  nno[0] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 nenet_gen[0].row_gen[3].neron_inst/q_reg[2]_lopt_replica/C
+                            (rising edge-triggered cell FDRE clocked by clk_pin  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            nno[2]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        3.026ns  (logic 1.377ns (45.499%)  route 1.649ns (54.501%))
+  Logic Levels:           1  (OBUF=1)
+  Clock Uncertainty:      0.025ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.050ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_pin rise edge)    0.000     0.000 r  
+    C15                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    C15                  IBUF (Prop_ibuf_I_O)         0.218     0.218 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.802     1.020    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     1.046 r  clk_IBUF_BUFG_inst/O
+                         net (fo=52, routed)          0.591     1.637    nenet_gen[0].row_gen[3].neron_inst/CLK
+    SLICE_X64Y94         FDRE                                         r  nenet_gen[0].row_gen[3].neron_inst/q_reg[2]_lopt_replica/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X64Y94         FDRE (Prop_fdre_C_Q)         0.164     1.801 r  nenet_gen[0].row_gen[3].neron_inst/q_reg[2]_lopt_replica/Q
+                         net (fo=1, routed)           1.649     3.450    lopt_2
+    A16                  OBUF (Prop_obuf_I_O)         1.213     4.663 r  nno_OBUF[2]_inst/O
+                         net (fo=0)                   0.000     4.663    nno[2]
+    A16                                                               r  nno[2] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+
+
+
+
+--------------------------------------------------------------------------------------
+Path Group:  (none)
+From Clock:  
+  To Clock:  clk_pin
+
+Max Delay           156 Endpoints
+Min Delay           156 Endpoints
+--------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack:                    inf
+  Source:                 lrn
+                            (input port)
+  Destination:            nenet_gen[2].row_gen[3].neron_inst/q_reg[3]/CE
+                            (rising edge-triggered cell FDRE clocked by clk_pin  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             (none)
+  Path Type:              Setup (Max at Slow Process Corner)
+  Data Path Delay:        7.672ns  (logic 1.572ns (20.494%)  route 6.099ns (79.506%))
+  Logic Levels:           2  (IBUF=1 LUT6=1)
+  Clock Path Skew:        5.132ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    5.132ns
+    Source Clock Delay      (SCD):    0.000ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.025ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.050ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    A15                                               0.000     0.000 f  lrn (IN)
+                         net (fo=0)                   0.000     0.000    lrn
+    A15                  IBUF (Prop_ibuf_I_O)         1.448     1.448 f  lrn_IBUF_inst/O
+                         net (fo=60, routed)          5.617     7.065    nenet_gen[2].row_gen[3].neron_inst/lrn_IBUF
+    SLICE_X63Y92         LUT6 (Prop_lut6_I5_O)        0.124     7.189 r  nenet_gen[2].row_gen[3].neron_inst/q[3]_i_1__3/O
+                         net (fo=4, routed)           0.482     7.672    nenet_gen[2].row_gen[3].neron_inst/q[3]_i_1__3_n_0
+    SLICE_X63Y93         FDRE                                         r  nenet_gen[2].row_gen[3].neron_inst/q_reg[3]/CE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_pin rise edge)    0.000     0.000 r  
+    C15                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    C15                  IBUF (Prop_ibuf_I_O)         1.380     1.380 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           2.155     3.535    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091     3.626 r  clk_IBUF_BUFG_inst/O
+                         net (fo=52, routed)          1.506     5.132    nenet_gen[2].row_gen[3].neron_inst/CLK
+    SLICE_X63Y93         FDRE                                         r  nenet_gen[2].row_gen[3].neron_inst/q_reg[3]/C
+
+Slack:                    inf
+  Source:                 lrn
+                            (input port)
+  Destination:            nenet_gen[0].row_gen[3].neron_inst/q_reg[2]_lopt_replica/CE
+                            (rising edge-triggered cell FDRE clocked by clk_pin  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             (none)
+  Path Type:              Setup (Max at Slow Process Corner)
+  Data Path Delay:        7.630ns  (logic 1.572ns (20.606%)  route 6.058ns (79.394%))
+  Logic Levels:           2  (IBUF=1 LUT6=1)
+  Clock Path Skew:        5.132ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    5.132ns
+    Source Clock Delay      (SCD):    0.000ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.025ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.050ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    A15                                               0.000     0.000 f  lrn (IN)
+                         net (fo=0)                   0.000     0.000    lrn
+    A15                  IBUF (Prop_ibuf_I_O)         1.448     1.448 f  lrn_IBUF_inst/O
+                         net (fo=60, routed)          5.094     6.543    nenet_gen[0].row_gen[3].neron_inst/lrn_IBUF
+    SLICE_X65Y93         LUT6 (Prop_lut6_I5_O)        0.124     6.667 r  nenet_gen[0].row_gen[3].neron_inst/q[3]_i_1__7/O
+                         net (fo=8, routed)           0.963     7.630    nenet_gen[0].row_gen[3].neron_inst/q[3]_i_1__7_n_0
+    SLICE_X64Y94         FDRE                                         r  nenet_gen[0].row_gen[3].neron_inst/q_reg[2]_lopt_replica/CE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_pin rise edge)    0.000     0.000 r  
+    C15                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    C15                  IBUF (Prop_ibuf_I_O)         1.380     1.380 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           2.155     3.535    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091     3.626 r  clk_IBUF_BUFG_inst/O
+                         net (fo=52, routed)          1.506     5.132    nenet_gen[0].row_gen[3].neron_inst/CLK
+    SLICE_X64Y94         FDRE                                         r  nenet_gen[0].row_gen[3].neron_inst/q_reg[2]_lopt_replica/C
+
+Slack:                    inf
+  Source:                 lrn
+                            (input port)
+  Destination:            nenet_gen[2].row_gen[3].neron_inst/q_reg[0]/CE
+                            (rising edge-triggered cell FDRE clocked by clk_pin  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             (none)
+  Path Type:              Setup (Max at Slow Process Corner)
+  Data Path Delay:        7.533ns  (logic 1.572ns (20.872%)  route 5.960ns (79.128%))
+  Logic Levels:           2  (IBUF=1 LUT6=1)
+  Clock Path Skew:        5.131ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    5.131ns
+    Source Clock Delay      (SCD):    0.000ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.025ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.050ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    A15                                               0.000     0.000 f  lrn (IN)
+                         net (fo=0)                   0.000     0.000    lrn
+    A15                  IBUF (Prop_ibuf_I_O)         1.448     1.448 f  lrn_IBUF_inst/O
+                         net (fo=60, routed)          5.617     7.065    nenet_gen[2].row_gen[3].neron_inst/lrn_IBUF
+    SLICE_X63Y92         LUT6 (Prop_lut6_I5_O)        0.124     7.189 r  nenet_gen[2].row_gen[3].neron_inst/q[3]_i_1__3/O
+                         net (fo=4, routed)           0.343     7.533    nenet_gen[2].row_gen[3].neron_inst/q[3]_i_1__3_n_0
+    SLICE_X64Y92         FDRE                                         r  nenet_gen[2].row_gen[3].neron_inst/q_reg[0]/CE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_pin rise edge)    0.000     0.000 r  
+    C15                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    C15                  IBUF (Prop_ibuf_I_O)         1.380     1.380 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           2.155     3.535    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091     3.626 r  clk_IBUF_BUFG_inst/O
+                         net (fo=52, routed)          1.505     5.131    nenet_gen[2].row_gen[3].neron_inst/CLK
+    SLICE_X64Y92         FDRE                                         r  nenet_gen[2].row_gen[3].neron_inst/q_reg[0]/C
+
+Slack:                    inf
+  Source:                 lrn
+                            (input port)
+  Destination:            nenet_gen[2].row_gen[3].neron_inst/q_reg[1]/CE
+                            (rising edge-triggered cell FDRE clocked by clk_pin  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             (none)
+  Path Type:              Setup (Max at Slow Process Corner)
+  Data Path Delay:        7.533ns  (logic 1.572ns (20.872%)  route 5.960ns (79.128%))
+  Logic Levels:           2  (IBUF=1 LUT6=1)
+  Clock Path Skew:        5.131ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    5.131ns
+    Source Clock Delay      (SCD):    0.000ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.025ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.050ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    A15                                               0.000     0.000 f  lrn (IN)
+                         net (fo=0)                   0.000     0.000    lrn
+    A15                  IBUF (Prop_ibuf_I_O)         1.448     1.448 f  lrn_IBUF_inst/O
+                         net (fo=60, routed)          5.617     7.065    nenet_gen[2].row_gen[3].neron_inst/lrn_IBUF
+    SLICE_X63Y92         LUT6 (Prop_lut6_I5_O)        0.124     7.189 r  nenet_gen[2].row_gen[3].neron_inst/q[3]_i_1__3/O
+                         net (fo=4, routed)           0.343     7.533    nenet_gen[2].row_gen[3].neron_inst/q[3]_i_1__3_n_0
+    SLICE_X65Y92         FDRE                                         r  nenet_gen[2].row_gen[3].neron_inst/q_reg[1]/CE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_pin rise edge)    0.000     0.000 r  
+    C15                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    C15                  IBUF (Prop_ibuf_I_O)         1.380     1.380 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           2.155     3.535    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091     3.626 r  clk_IBUF_BUFG_inst/O
+                         net (fo=52, routed)          1.505     5.131    nenet_gen[2].row_gen[3].neron_inst/CLK
+    SLICE_X65Y92         FDRE                                         r  nenet_gen[2].row_gen[3].neron_inst/q_reg[1]/C
+
+Slack:                    inf
+  Source:                 lrn
+                            (input port)
+  Destination:            nenet_gen[2].row_gen[3].neron_inst/q_reg[2]/CE
+                            (rising edge-triggered cell FDRE clocked by clk_pin  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             (none)
+  Path Type:              Setup (Max at Slow Process Corner)
+  Data Path Delay:        7.533ns  (logic 1.572ns (20.872%)  route 5.960ns (79.128%))
+  Logic Levels:           2  (IBUF=1 LUT6=1)
+  Clock Path Skew:        5.131ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    5.131ns
+    Source Clock Delay      (SCD):    0.000ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.025ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.050ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    A15                                               0.000     0.000 f  lrn (IN)
+                         net (fo=0)                   0.000     0.000    lrn
+    A15                  IBUF (Prop_ibuf_I_O)         1.448     1.448 f  lrn_IBUF_inst/O
+                         net (fo=60, routed)          5.617     7.065    nenet_gen[2].row_gen[3].neron_inst/lrn_IBUF
+    SLICE_X63Y92         LUT6 (Prop_lut6_I5_O)        0.124     7.189 r  nenet_gen[2].row_gen[3].neron_inst/q[3]_i_1__3/O
+                         net (fo=4, routed)           0.343     7.533    nenet_gen[2].row_gen[3].neron_inst/q[3]_i_1__3_n_0
+    SLICE_X65Y92         FDRE                                         r  nenet_gen[2].row_gen[3].neron_inst/q_reg[2]/CE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_pin rise edge)    0.000     0.000 r  
+    C15                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    C15                  IBUF (Prop_ibuf_I_O)         1.380     1.380 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           2.155     3.535    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091     3.626 r  clk_IBUF_BUFG_inst/O
+                         net (fo=52, routed)          1.505     5.131    nenet_gen[2].row_gen[3].neron_inst/CLK
+    SLICE_X65Y92         FDRE                                         r  nenet_gen[2].row_gen[3].neron_inst/q_reg[2]/C
+
+Slack:                    inf
+  Source:                 lrn
+                            (input port)
+  Destination:            nenet_gen[1].row_gen[0].neron_inst/q_reg[3]/CE
+                            (rising edge-triggered cell FDRE clocked by clk_pin  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             (none)
+  Path Type:              Setup (Max at Slow Process Corner)
+  Data Path Delay:        7.440ns  (logic 1.572ns (21.130%)  route 5.868ns (78.870%))
+  Logic Levels:           2  (IBUF=1 LUT6=1)
+  Clock Path Skew:        5.131ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    5.131ns
+    Source Clock Delay      (SCD):    0.000ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.025ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.050ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    A15                                               0.000     0.000 f  lrn (IN)
+                         net (fo=0)                   0.000     0.000    lrn
+    A15                  IBUF (Prop_ibuf_I_O)         1.448     1.448 f  lrn_IBUF_inst/O
+                         net (fo=60, routed)          4.903     6.351    nenet_gen[1].row_gen[0].neron_inst/lrn_IBUF
+    SLICE_X62Y92         LUT6 (Prop_lut6_I5_O)        0.124     6.475 r  nenet_gen[1].row_gen[0].neron_inst/q[3]_i_1__0/O
+                         net (fo=4, routed)           0.966     7.440    nenet_gen[1].row_gen[0].neron_inst/q[3]_i_1__0_n_0
+    SLICE_X60Y94         FDRE                                         r  nenet_gen[1].row_gen[0].neron_inst/q_reg[3]/CE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_pin rise edge)    0.000     0.000 r  
+    C15                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    C15                  IBUF (Prop_ibuf_I_O)         1.380     1.380 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           2.155     3.535    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091     3.626 r  clk_IBUF_BUFG_inst/O
+                         net (fo=52, routed)          1.505     5.131    nenet_gen[1].row_gen[0].neron_inst/CLK
+    SLICE_X60Y94         FDRE                                         r  nenet_gen[1].row_gen[0].neron_inst/q_reg[3]/C
+
+Slack:                    inf
+  Source:                 lrn
+                            (input port)
+  Destination:            nenet_gen[0].row_gen[3].neron_inst/q_reg[0]/D
+                            (rising edge-triggered cell FDRE clocked by clk_pin  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             (none)
+  Path Type:              Setup (Max at Slow Process Corner)
+  Data Path Delay:        7.364ns  (logic 1.572ns (21.350%)  route 5.792ns (78.650%))
+  Logic Levels:           2  (IBUF=1 LUT4=1)
+  Clock Path Skew:        5.132ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    5.132ns
+    Source Clock Delay      (SCD):    0.000ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.025ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.050ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    A15                                               0.000     0.000 r  lrn (IN)
+                         net (fo=0)                   0.000     0.000    lrn
+    A15                  IBUF (Prop_ibuf_I_O)         1.448     1.448 r  lrn_IBUF_inst/O
+                         net (fo=60, routed)          5.269     6.717    nenet_gen[0].row_gen[3].neron_inst/lrn_IBUF
+    SLICE_X64Y92         LUT4 (Prop_lut4_I2_O)        0.124     6.841 r  nenet_gen[0].row_gen[3].neron_inst/q[0]_i_1__8/O
+                         net (fo=2, routed)           0.523     7.364    nenet_gen[0].row_gen[3].neron_inst/q[0]_i_1__8_n_0
+    SLICE_X65Y93         FDRE                                         r  nenet_gen[0].row_gen[3].neron_inst/q_reg[0]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_pin rise edge)    0.000     0.000 r  
+    C15                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    C15                  IBUF (Prop_ibuf_I_O)         1.380     1.380 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           2.155     3.535    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091     3.626 r  clk_IBUF_BUFG_inst/O
+                         net (fo=52, routed)          1.506     5.132    nenet_gen[0].row_gen[3].neron_inst/CLK
+    SLICE_X65Y93         FDRE                                         r  nenet_gen[0].row_gen[3].neron_inst/q_reg[0]/C
+
+Slack:                    inf
+  Source:                 lrn
+                            (input port)
+  Destination:            nenet_gen[0].row_gen[3].neron_inst/q_reg[1]/CE
+                            (rising edge-triggered cell FDRE clocked by clk_pin  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             (none)
+  Path Type:              Setup (Max at Slow Process Corner)
+  Data Path Delay:        7.251ns  (logic 1.572ns (21.682%)  route 5.679ns (78.318%))
+  Logic Levels:           2  (IBUF=1 LUT6=1)
+  Clock Path Skew:        5.132ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    5.132ns
+    Source Clock Delay      (SCD):    0.000ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.025ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.050ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    A15                                               0.000     0.000 f  lrn (IN)
+                         net (fo=0)                   0.000     0.000    lrn
+    A15                  IBUF (Prop_ibuf_I_O)         1.448     1.448 f  lrn_IBUF_inst/O
+                         net (fo=60, routed)          5.094     6.543    nenet_gen[0].row_gen[3].neron_inst/lrn_IBUF
+    SLICE_X65Y93         LUT6 (Prop_lut6_I5_O)        0.124     6.667 r  nenet_gen[0].row_gen[3].neron_inst/q[3]_i_1__7/O
+                         net (fo=8, routed)           0.585     7.251    nenet_gen[0].row_gen[3].neron_inst/q[3]_i_1__7_n_0
+    SLICE_X64Y93         FDRE                                         r  nenet_gen[0].row_gen[3].neron_inst/q_reg[1]/CE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_pin rise edge)    0.000     0.000 r  
+    C15                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    C15                  IBUF (Prop_ibuf_I_O)         1.380     1.380 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           2.155     3.535    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091     3.626 r  clk_IBUF_BUFG_inst/O
+                         net (fo=52, routed)          1.506     5.132    nenet_gen[0].row_gen[3].neron_inst/CLK
+    SLICE_X64Y93         FDRE                                         r  nenet_gen[0].row_gen[3].neron_inst/q_reg[1]/C
+
+Slack:                    inf
+  Source:                 lrn
+                            (input port)
+  Destination:            nenet_gen[0].row_gen[3].neron_inst/q_reg[1]_lopt_replica/CE
+                            (rising edge-triggered cell FDRE clocked by clk_pin  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             (none)
+  Path Type:              Setup (Max at Slow Process Corner)
+  Data Path Delay:        7.251ns  (logic 1.572ns (21.682%)  route 5.679ns (78.318%))
+  Logic Levels:           2  (IBUF=1 LUT6=1)
+  Clock Path Skew:        5.132ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    5.132ns
+    Source Clock Delay      (SCD):    0.000ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.025ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.050ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    A15                                               0.000     0.000 f  lrn (IN)
+                         net (fo=0)                   0.000     0.000    lrn
+    A15                  IBUF (Prop_ibuf_I_O)         1.448     1.448 f  lrn_IBUF_inst/O
+                         net (fo=60, routed)          5.094     6.543    nenet_gen[0].row_gen[3].neron_inst/lrn_IBUF
+    SLICE_X65Y93         LUT6 (Prop_lut6_I5_O)        0.124     6.667 r  nenet_gen[0].row_gen[3].neron_inst/q[3]_i_1__7/O
+                         net (fo=8, routed)           0.585     7.251    nenet_gen[0].row_gen[3].neron_inst/q[3]_i_1__7_n_0
+    SLICE_X64Y93         FDRE                                         r  nenet_gen[0].row_gen[3].neron_inst/q_reg[1]_lopt_replica/CE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_pin rise edge)    0.000     0.000 r  
+    C15                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    C15                  IBUF (Prop_ibuf_I_O)         1.380     1.380 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           2.155     3.535    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091     3.626 r  clk_IBUF_BUFG_inst/O
+                         net (fo=52, routed)          1.506     5.132    nenet_gen[0].row_gen[3].neron_inst/CLK
+    SLICE_X64Y93         FDRE                                         r  nenet_gen[0].row_gen[3].neron_inst/q_reg[1]_lopt_replica/C
+
+Slack:                    inf
+  Source:                 lrn
+                            (input port)
+  Destination:            nenet_gen[0].row_gen[3].neron_inst/q_reg[2]/CE
+                            (rising edge-triggered cell FDRE clocked by clk_pin  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             (none)
+  Path Type:              Setup (Max at Slow Process Corner)
+  Data Path Delay:        7.251ns  (logic 1.572ns (21.682%)  route 5.679ns (78.318%))
+  Logic Levels:           2  (IBUF=1 LUT6=1)
+  Clock Path Skew:        5.132ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    5.132ns
+    Source Clock Delay      (SCD):    0.000ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.025ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.050ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    A15                                               0.000     0.000 f  lrn (IN)
+                         net (fo=0)                   0.000     0.000    lrn
+    A15                  IBUF (Prop_ibuf_I_O)         1.448     1.448 f  lrn_IBUF_inst/O
+                         net (fo=60, routed)          5.094     6.543    nenet_gen[0].row_gen[3].neron_inst/lrn_IBUF
+    SLICE_X65Y93         LUT6 (Prop_lut6_I5_O)        0.124     6.667 r  nenet_gen[0].row_gen[3].neron_inst/q[3]_i_1__7/O
+                         net (fo=8, routed)           0.585     7.251    nenet_gen[0].row_gen[3].neron_inst/q[3]_i_1__7_n_0
+    SLICE_X64Y93         FDRE                                         r  nenet_gen[0].row_gen[3].neron_inst/q_reg[2]/CE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_pin rise edge)    0.000     0.000 r  
+    C15                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    C15                  IBUF (Prop_ibuf_I_O)         1.380     1.380 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           2.155     3.535    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091     3.626 r  clk_IBUF_BUFG_inst/O
+                         net (fo=52, routed)          1.506     5.132    nenet_gen[0].row_gen[3].neron_inst/CLK
+    SLICE_X64Y93         FDRE                                         r  nenet_gen[0].row_gen[3].neron_inst/q_reg[2]/C
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack:                    inf
+  Source:                 reset
+                            (input port)
+  Destination:            nenet_gen[0].row_gen[3].neron_inst/q_reg[2]_lopt_replica/R
+                            (rising edge-triggered cell FDRE clocked by clk_pin  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             (none)
+  Path Type:              Hold (Min at Fast Process Corner)
+  Data Path Delay:        0.587ns  (logic 0.218ns (37.114%)  route 0.369ns (62.886%))
+  Logic Levels:           1  (IBUF=1)
+  Clock Path Skew:        2.161ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.161ns
+    Source Clock Delay      (SCD):    0.000ns
+    Clock Pessimism Removal (CPR):    -0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    H1                                                0.000     0.000 r  reset (IN)
+                         net (fo=0)                   0.000     0.000    reset
+    H1                   IBUF (Prop_ibuf_I_O)         0.218     0.218 r  reset_IBUF_inst/O
+                         net (fo=52, routed)          0.369     0.587    nenet_gen[0].row_gen[3].neron_inst/SR[0]
+    SLICE_X64Y94         FDRE                                         r  nenet_gen[0].row_gen[3].neron_inst/q_reg[2]_lopt_replica/R
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_pin rise edge)    0.000     0.000 r  
+    C15                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    C15                  IBUF (Prop_ibuf_I_O)         0.406     0.406 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.865     1.271    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.300 r  clk_IBUF_BUFG_inst/O
+                         net (fo=52, routed)          0.861     2.161    nenet_gen[0].row_gen[3].neron_inst/CLK
+    SLICE_X64Y94         FDRE                                         r  nenet_gen[0].row_gen[3].neron_inst/q_reg[2]_lopt_replica/C
+
+Slack:                    inf
+  Source:                 reset
+                            (input port)
+  Destination:            nenet_gen[1].row_gen[3].neron_inst/q_reg[1]/R
+                            (rising edge-triggered cell FDRE clocked by clk_pin  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             (none)
+  Path Type:              Hold (Min at Fast Process Corner)
+  Data Path Delay:        0.587ns  (logic 0.218ns (37.114%)  route 0.369ns (62.886%))
+  Logic Levels:           1  (IBUF=1)
+  Clock Path Skew:        2.161ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.161ns
+    Source Clock Delay      (SCD):    0.000ns
+    Clock Pessimism Removal (CPR):    -0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    H1                                                0.000     0.000 r  reset (IN)
+                         net (fo=0)                   0.000     0.000    reset
+    H1                   IBUF (Prop_ibuf_I_O)         0.218     0.218 r  reset_IBUF_inst/O
+                         net (fo=52, routed)          0.369     0.587    nenet_gen[1].row_gen[3].neron_inst/SR[0]
+    SLICE_X65Y94         FDRE                                         r  nenet_gen[1].row_gen[3].neron_inst/q_reg[1]/R
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_pin rise edge)    0.000     0.000 r  
+    C15                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    C15                  IBUF (Prop_ibuf_I_O)         0.406     0.406 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.865     1.271    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.300 r  clk_IBUF_BUFG_inst/O
+                         net (fo=52, routed)          0.861     2.161    nenet_gen[1].row_gen[3].neron_inst/CLK
+    SLICE_X65Y94         FDRE                                         r  nenet_gen[1].row_gen[3].neron_inst/q_reg[1]/C
+
+Slack:                    inf
+  Source:                 reset
+                            (input port)
+  Destination:            nenet_gen[1].row_gen[3].neron_inst/q_reg[2]/R
+                            (rising edge-triggered cell FDRE clocked by clk_pin  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             (none)
+  Path Type:              Hold (Min at Fast Process Corner)
+  Data Path Delay:        0.587ns  (logic 0.218ns (37.114%)  route 0.369ns (62.886%))
+  Logic Levels:           1  (IBUF=1)
+  Clock Path Skew:        2.161ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.161ns
+    Source Clock Delay      (SCD):    0.000ns
+    Clock Pessimism Removal (CPR):    -0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    H1                                                0.000     0.000 r  reset (IN)
+                         net (fo=0)                   0.000     0.000    reset
+    H1                   IBUF (Prop_ibuf_I_O)         0.218     0.218 r  reset_IBUF_inst/O
+                         net (fo=52, routed)          0.369     0.587    nenet_gen[1].row_gen[3].neron_inst/SR[0]
+    SLICE_X65Y94         FDRE                                         r  nenet_gen[1].row_gen[3].neron_inst/q_reg[2]/R
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_pin rise edge)    0.000     0.000 r  
+    C15                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    C15                  IBUF (Prop_ibuf_I_O)         0.406     0.406 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.865     1.271    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.300 r  clk_IBUF_BUFG_inst/O
+                         net (fo=52, routed)          0.861     2.161    nenet_gen[1].row_gen[3].neron_inst/CLK
+    SLICE_X65Y94         FDRE                                         r  nenet_gen[1].row_gen[3].neron_inst/q_reg[2]/C
+
+Slack:                    inf
+  Source:                 ldata[3]
+                            (input port)
+  Destination:            nenet_gen[2].row_gen[3].neron_inst/q_reg[3]/D
+                            (rising edge-triggered cell FDRE clocked by clk_pin  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             (none)
+  Path Type:              Hold (Min at Fast Process Corner)
+  Data Path Delay:        0.632ns  (logic 0.263ns (41.666%)  route 0.369ns (58.334%))
+  Logic Levels:           2  (IBUF=1 LUT5=1)
+  Clock Path Skew:        2.161ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.161ns
+    Source Clock Delay      (SCD):    0.000ns
+    Clock Pessimism Removal (CPR):    -0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    J1                                                0.000     0.000 r  ldata[3] (IN)
+                         net (fo=0)                   0.000     0.000    ldata[3]
+    J1                   IBUF (Prop_ibuf_I_O)         0.218     0.218 r  ldata_IBUF[3]_inst/O
+                         net (fo=12, routed)          0.369     0.587    nenet_gen[1].row_gen[3].neron_inst/ldata_IBUF[3]
+    SLICE_X63Y93         LUT5 (Prop_lut5_I0_O)        0.045     0.632 r  nenet_gen[1].row_gen[3].neron_inst/q[3]_i_2__0/O
+                         net (fo=1, routed)           0.000     0.632    nenet_gen[2].row_gen[3].neron_inst/D[0]
+    SLICE_X63Y93         FDRE                                         r  nenet_gen[2].row_gen[3].neron_inst/q_reg[3]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_pin rise edge)    0.000     0.000 r  
+    C15                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    C15                  IBUF (Prop_ibuf_I_O)         0.406     0.406 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.865     1.271    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.300 r  clk_IBUF_BUFG_inst/O
+                         net (fo=52, routed)          0.861     2.161    nenet_gen[2].row_gen[3].neron_inst/CLK
+    SLICE_X63Y93         FDRE                                         r  nenet_gen[2].row_gen[3].neron_inst/q_reg[3]/C
+
+Slack:                    inf
+  Source:                 reset
+                            (input port)
+  Destination:            nenet_gen[0].row_gen[3].neron_inst/q_reg[0]/R
+                            (rising edge-triggered cell FDRE clocked by clk_pin  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             (none)
+  Path Type:              Hold (Min at Fast Process Corner)
+  Data Path Delay:        0.659ns  (logic 0.218ns (33.072%)  route 0.441ns (66.928%))
+  Logic Levels:           1  (IBUF=1)
+  Clock Path Skew:        2.161ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.161ns
+    Source Clock Delay      (SCD):    0.000ns
+    Clock Pessimism Removal (CPR):    -0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    H1                                                0.000     0.000 r  reset (IN)
+                         net (fo=0)                   0.000     0.000    reset
+    H1                   IBUF (Prop_ibuf_I_O)         0.218     0.218 r  reset_IBUF_inst/O
+                         net (fo=52, routed)          0.441     0.659    nenet_gen[0].row_gen[3].neron_inst/SR[0]
+    SLICE_X65Y93         FDRE                                         r  nenet_gen[0].row_gen[3].neron_inst/q_reg[0]/R
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_pin rise edge)    0.000     0.000 r  
+    C15                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    C15                  IBUF (Prop_ibuf_I_O)         0.406     0.406 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.865     1.271    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.300 r  clk_IBUF_BUFG_inst/O
+                         net (fo=52, routed)          0.861     2.161    nenet_gen[0].row_gen[3].neron_inst/CLK
+    SLICE_X65Y93         FDRE                                         r  nenet_gen[0].row_gen[3].neron_inst/q_reg[0]/C
+
+Slack:                    inf
+  Source:                 reset
+                            (input port)
+  Destination:            nenet_gen[0].row_gen[3].neron_inst/q_reg[0]_lopt_replica/R
+                            (rising edge-triggered cell FDRE clocked by clk_pin  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             (none)
+  Path Type:              Hold (Min at Fast Process Corner)
+  Data Path Delay:        0.659ns  (logic 0.218ns (33.072%)  route 0.441ns (66.928%))
+  Logic Levels:           1  (IBUF=1)
+  Clock Path Skew:        2.161ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.161ns
+    Source Clock Delay      (SCD):    0.000ns
+    Clock Pessimism Removal (CPR):    -0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    H1                                                0.000     0.000 r  reset (IN)
+                         net (fo=0)                   0.000     0.000    reset
+    H1                   IBUF (Prop_ibuf_I_O)         0.218     0.218 r  reset_IBUF_inst/O
+                         net (fo=52, routed)          0.441     0.659    nenet_gen[0].row_gen[3].neron_inst/SR[0]
+    SLICE_X65Y93         FDRE                                         r  nenet_gen[0].row_gen[3].neron_inst/q_reg[0]_lopt_replica/R
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_pin rise edge)    0.000     0.000 r  
+    C15                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    C15                  IBUF (Prop_ibuf_I_O)         0.406     0.406 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.865     1.271    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.300 r  clk_IBUF_BUFG_inst/O
+                         net (fo=52, routed)          0.861     2.161    nenet_gen[0].row_gen[3].neron_inst/CLK
+    SLICE_X65Y93         FDRE                                         r  nenet_gen[0].row_gen[3].neron_inst/q_reg[0]_lopt_replica/C
+
+Slack:                    inf
+  Source:                 reset
+                            (input port)
+  Destination:            nenet_gen[0].row_gen[3].neron_inst/q_reg[1]/R
+                            (rising edge-triggered cell FDRE clocked by clk_pin  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             (none)
+  Path Type:              Hold (Min at Fast Process Corner)
+  Data Path Delay:        0.659ns  (logic 0.218ns (33.072%)  route 0.441ns (66.928%))
+  Logic Levels:           1  (IBUF=1)
+  Clock Path Skew:        2.161ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.161ns
+    Source Clock Delay      (SCD):    0.000ns
+    Clock Pessimism Removal (CPR):    -0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    H1                                                0.000     0.000 r  reset (IN)
+                         net (fo=0)                   0.000     0.000    reset
+    H1                   IBUF (Prop_ibuf_I_O)         0.218     0.218 r  reset_IBUF_inst/O
+                         net (fo=52, routed)          0.441     0.659    nenet_gen[0].row_gen[3].neron_inst/SR[0]
+    SLICE_X64Y93         FDRE                                         r  nenet_gen[0].row_gen[3].neron_inst/q_reg[1]/R
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_pin rise edge)    0.000     0.000 r  
+    C15                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    C15                  IBUF (Prop_ibuf_I_O)         0.406     0.406 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.865     1.271    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.300 r  clk_IBUF_BUFG_inst/O
+                         net (fo=52, routed)          0.861     2.161    nenet_gen[0].row_gen[3].neron_inst/CLK
+    SLICE_X64Y93         FDRE                                         r  nenet_gen[0].row_gen[3].neron_inst/q_reg[1]/C
+
+Slack:                    inf
+  Source:                 reset
+                            (input port)
+  Destination:            nenet_gen[0].row_gen[3].neron_inst/q_reg[1]_lopt_replica/R
+                            (rising edge-triggered cell FDRE clocked by clk_pin  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             (none)
+  Path Type:              Hold (Min at Fast Process Corner)
+  Data Path Delay:        0.659ns  (logic 0.218ns (33.072%)  route 0.441ns (66.928%))
+  Logic Levels:           1  (IBUF=1)
+  Clock Path Skew:        2.161ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.161ns
+    Source Clock Delay      (SCD):    0.000ns
+    Clock Pessimism Removal (CPR):    -0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    H1                                                0.000     0.000 r  reset (IN)
+                         net (fo=0)                   0.000     0.000    reset
+    H1                   IBUF (Prop_ibuf_I_O)         0.218     0.218 r  reset_IBUF_inst/O
+                         net (fo=52, routed)          0.441     0.659    nenet_gen[0].row_gen[3].neron_inst/SR[0]
+    SLICE_X64Y93         FDRE                                         r  nenet_gen[0].row_gen[3].neron_inst/q_reg[1]_lopt_replica/R
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_pin rise edge)    0.000     0.000 r  
+    C15                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    C15                  IBUF (Prop_ibuf_I_O)         0.406     0.406 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.865     1.271    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.300 r  clk_IBUF_BUFG_inst/O
+                         net (fo=52, routed)          0.861     2.161    nenet_gen[0].row_gen[3].neron_inst/CLK
+    SLICE_X64Y93         FDRE                                         r  nenet_gen[0].row_gen[3].neron_inst/q_reg[1]_lopt_replica/C
+
+Slack:                    inf
+  Source:                 reset
+                            (input port)
+  Destination:            nenet_gen[0].row_gen[3].neron_inst/q_reg[2]/R
+                            (rising edge-triggered cell FDRE clocked by clk_pin  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             (none)
+  Path Type:              Hold (Min at Fast Process Corner)
+  Data Path Delay:        0.659ns  (logic 0.218ns (33.072%)  route 0.441ns (66.928%))
+  Logic Levels:           1  (IBUF=1)
+  Clock Path Skew:        2.161ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.161ns
+    Source Clock Delay      (SCD):    0.000ns
+    Clock Pessimism Removal (CPR):    -0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    H1                                                0.000     0.000 r  reset (IN)
+                         net (fo=0)                   0.000     0.000    reset
+    H1                   IBUF (Prop_ibuf_I_O)         0.218     0.218 r  reset_IBUF_inst/O
+                         net (fo=52, routed)          0.441     0.659    nenet_gen[0].row_gen[3].neron_inst/SR[0]
+    SLICE_X64Y93         FDRE                                         r  nenet_gen[0].row_gen[3].neron_inst/q_reg[2]/R
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_pin rise edge)    0.000     0.000 r  
+    C15                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    C15                  IBUF (Prop_ibuf_I_O)         0.406     0.406 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.865     1.271    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.300 r  clk_IBUF_BUFG_inst/O
+                         net (fo=52, routed)          0.861     2.161    nenet_gen[0].row_gen[3].neron_inst/CLK
+    SLICE_X64Y93         FDRE                                         r  nenet_gen[0].row_gen[3].neron_inst/q_reg[2]/C
+
+Slack:                    inf
+  Source:                 reset
+                            (input port)
+  Destination:            nenet_gen[0].row_gen[3].neron_inst/q_reg[3]/R
+                            (rising edge-triggered cell FDRE clocked by clk_pin  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             (none)
+  Path Type:              Hold (Min at Fast Process Corner)
+  Data Path Delay:        0.659ns  (logic 0.218ns (33.072%)  route 0.441ns (66.928%))
+  Logic Levels:           1  (IBUF=1)
+  Clock Path Skew:        2.161ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.161ns
+    Source Clock Delay      (SCD):    0.000ns
+    Clock Pessimism Removal (CPR):    -0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    H1                                                0.000     0.000 r  reset (IN)
+                         net (fo=0)                   0.000     0.000    reset
+    H1                   IBUF (Prop_ibuf_I_O)         0.218     0.218 r  reset_IBUF_inst/O
+                         net (fo=52, routed)          0.441     0.659    nenet_gen[0].row_gen[3].neron_inst/SR[0]
+    SLICE_X64Y93         FDRE                                         r  nenet_gen[0].row_gen[3].neron_inst/q_reg[3]/R
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_pin rise edge)    0.000     0.000 r  
+    C15                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    C15                  IBUF (Prop_ibuf_I_O)         0.406     0.406 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.865     1.271    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.300 r  clk_IBUF_BUFG_inst/O
+                         net (fo=52, routed)          0.861     2.161    nenet_gen[0].row_gen[3].neron_inst/CLK
+    SLICE_X64Y93         FDRE                                         r  nenet_gen[0].row_gen[3].neron_inst/q_reg[3]/C
+
+
+
+
+

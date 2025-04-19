@@ -1,0 +1,4 @@
+Time resolution is 1 ps
+Failure: test finished!
+Time: 1600 ns  Iteration: 0  Process: /comp_2bit_sim/stim_proc  File: D:/fpga/kitap1b/9_comp_2bit/9_comp_2bit.srcs/sim_1/new/comp_2bit_sim.vhd
+$finish called at time : 1600 ns : File "D:/fpga/kitap1b/9_comp_2bit/9_comp_2bit.srcs/sim_1/new/comp_2bit_sim.vhd" Line 75

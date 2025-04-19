@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Thu Feb  6 15:26:31 2025
+# Process ID: 34832
+# Current directory: D:/fpga/kitap1b/4_for_loop/4_for_loop.runs/impl_1
+# Command line: vivado.exe -log for_loop.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source for_loop.tcl -notrace
+# Log file: D:/fpga/kitap1b/4_for_loop/4_for_loop.runs/impl_1/for_loop.vdi
+# Journal file: D:/fpga/kitap1b/4_for_loop/4_for_loop.runs/impl_1\vivado.jou
+# Running On: hberkal, OS: Windows, CPU Frequency: 2918 MHz, CPU Physical cores: 14, Host memory: 16893 MB
+#-----------------------------------------------------------
+source for_loop.tcl -notrace

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="codelock_sim_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="codelock_sim" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="300.001 ns"></ZoomEndTime>
+      <Cursor1Time time="25.000 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="188"></NameColumnWidth>
+      <ValueColumnWidth column_width="102"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="10" />
+   <wvobject fp_name="/codelock_sim/resetn" type="logic">
+      <obj_property name="ElementShortName">resetn</obj_property>
+      <obj_property name="ObjectShortName">resetn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/codelock_sim/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/codelock_sim/strobe" type="logic">
+      <obj_property name="ElementShortName">strobe</obj_property>
+      <obj_property name="ObjectShortName">strobe</obj_property>
+   </wvobject>
+   <wvobject fp_name="/codelock_sim/uut/strobe_old" type="logic">
+      <obj_property name="ElementShortName">strobe_old</obj_property>
+      <obj_property name="ObjectShortName">strobe_old</obj_property>
+   </wvobject>
+   <wvobject fp_name="/codelock_sim/key" type="array">
+      <obj_property name="ElementShortName">key[3:0]</obj_property>
+      <obj_property name="ObjectShortName">key[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/codelock_sim/code" type="array">
+      <obj_property name="ElementShortName">code[15:0]</obj_property>
+      <obj_property name="ObjectShortName">code[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/codelock_sim/uut/cnt" type="array">
+      <obj_property name="ElementShortName">cnt[3:0]</obj_property>
+      <obj_property name="ObjectShortName">cnt[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/codelock_sim/lock" type="logic">
+      <obj_property name="ElementShortName">lock</obj_property>
+      <obj_property name="ObjectShortName">lock</obj_property>
+   </wvobject>
+   <wvobject fp_name="/codelock_sim/digit" type="array">
+      <obj_property name="ElementShortName">digit[1:0]</obj_property>
+      <obj_property name="ObjectShortName">digit[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/codelock_sim/clk_period" type="other">
+      <obj_property name="ElementShortName">clk_period</obj_property>
+      <obj_property name="ObjectShortName">clk_period</obj_property>
+   </wvobject>
+</wave_config>

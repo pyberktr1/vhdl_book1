@@ -1,0 +1,7 @@
+set_property SRC_FILE_INFO {cfile:D:/fpga/kitap1b/7_andor/7_andor.srcs/constrs_1/imports/kitap1b/Cmod-A7-Master.xdc rfile:../../../7_andor.srcs/constrs_1/imports/kitap1b/Cmod-A7-Master.xdc id:1} [current_design]
+set_property src_info {type:XDC file:1 line:1 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict { PACKAGE_PIN M3    IOSTANDARD LVCMOS33 } [get_ports { X[0]  }]; #IO_L8N_T1_AD14N_35 Sch=pio[01]
+set_property src_info {type:XDC file:1 line:2 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict { PACKAGE_PIN L3    IOSTANDARD LVCMOS33 } [get_ports { X[1]  }]; #IO_L8P_T1_AD14P_35 Sch=pio[02]
+set_property src_info {type:XDC file:1 line:3 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict { PACKAGE_PIN A16   IOSTANDARD LVCMOS33 } [get_ports { Y     }]; #IO_L12P_T1_MRCC_16 Sch=pio[03]

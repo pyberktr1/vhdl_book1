@@ -1,0 +1,10 @@
+0.7
+2020.2
+Apr 18 2022
+16:05:34
+D:/fpga/kitap1b/40_echo_inf/40_echo_inf.srcs/sim_1/new/echo_inf_sim.vhd,1743089218,vhdl,,,,echo_inf_sim,,,,,,,,
+D:/fpga/kitap1b/40_echo_inf/40_echo_inf.srcs/sources_1/new/adder.vhd,1742830716,vhdl,D:/fpga/kitap1b/40_echo_inf/40_echo_inf.srcs/sources_1/new/echo_inf.vhd,,,adder,,,,,,,,
+D:/fpga/kitap1b/40_echo_inf/40_echo_inf.srcs/sources_1/new/delay.vhd,1742830686,vhdl,D:/fpga/kitap1b/40_echo_inf/40_echo_inf.srcs/sources_1/new/delayline.vhd,,,delay,,,,,,,,
+D:/fpga/kitap1b/40_echo_inf/40_echo_inf.srcs/sources_1/new/delayline.vhd,1742830701,vhdl,D:/fpga/kitap1b/40_echo_inf/40_echo_inf.srcs/sources_1/new/echo_inf.vhd,,,delayline,,,,,,,,
+D:/fpga/kitap1b/40_echo_inf/40_echo_inf.srcs/sources_1/new/echo_inf.vhd,1744023553,vhdl,D:/fpga/kitap1b/40_echo_inf/40_echo_inf.srcs/sim_1/new/echo_inf_sim.vhd,,,echo_inf,,,,,,,,
+D:/fpga/kitap1b/40_echo_inf/40_echo_inf.srcs/sources_1/new/gain.vhd,1742830658,vhdl,D:/fpga/kitap1b/40_echo_inf/40_echo_inf.srcs/sources_1/new/echo_inf.vhd,,,gain,,,,,,,,

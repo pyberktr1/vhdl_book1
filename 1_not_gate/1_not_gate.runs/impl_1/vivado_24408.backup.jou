@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Thu Jan 30 16:46:28 2025
+# Process ID: 24408
+# Current directory: D:/fpga/kitap1b/1_not_gate/1_not_gate.runs/impl_1
+# Command line: vivado.exe -log not_gate.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source not_gate.tcl -notrace
+# Log file: D:/fpga/kitap1b/1_not_gate/1_not_gate.runs/impl_1/not_gate.vdi
+# Journal file: D:/fpga/kitap1b/1_not_gate/1_not_gate.runs/impl_1\vivado.jou
+# Running On: hberkal, OS: Windows, CPU Frequency: 2918 MHz, CPU Physical cores: 14, Host memory: 16893 MB
+#-----------------------------------------------------------
+source not_gate.tcl -notrace

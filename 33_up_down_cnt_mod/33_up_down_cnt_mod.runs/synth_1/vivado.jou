@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Sat Mar  8 15:54:43 2025
+# Process ID: 21960
+# Current directory: D:/fpga/kitap1b/33_up_down_cnt_mod/33_up_down_cnt_mod.runs/synth_1
+# Command line: vivado.exe -log up_down_cnt_mod.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source up_down_cnt_mod.tcl
+# Log file: D:/fpga/kitap1b/33_up_down_cnt_mod/33_up_down_cnt_mod.runs/synth_1/up_down_cnt_mod.vds
+# Journal file: D:/fpga/kitap1b/33_up_down_cnt_mod/33_up_down_cnt_mod.runs/synth_1\vivado.jou
+# Running On: hberkal, OS: Windows, CPU Frequency: 2918 MHz, CPU Physical cores: 14, Host memory: 16893 MB
+#-----------------------------------------------------------
+source up_down_cnt_mod.tcl -notrace

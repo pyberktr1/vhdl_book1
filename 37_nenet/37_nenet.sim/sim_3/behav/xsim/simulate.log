@@ -1,0 +1,4 @@
+Time resolution is 1 ps
+Failure: test finished!
+Time: 48001700 ns  Iteration: 0  Process: /nenet_sim/stim_proc  File: D:/fpga/kitap1b/37_nenet/37_nenet.srcs/sim_3/new/nenet_sim3.vhd
+$finish called at time : 48001700 ns : File "D:/fpga/kitap1b/37_nenet/37_nenet.srcs/sim_3/new/nenet_sim3.vhd" Line 117

@@ -1,0 +1,4 @@
+Time resolution is 1 ps
+Failure: test finished!
+Time: 409800 ns  Iteration: 0  Process: /neronaurallogix_sim/stim_proc  File: D:/fpga/kitap1b/36_neronaurallogix/36_neronaurallogix.srcs/sim_1/new/neronaurallogix_sim.vhd
+$finish called at time : 409800 ns : File "D:/fpga/kitap1b/36_neronaurallogix/36_neronaurallogix.srcs/sim_1/new/neronaurallogix_sim.vhd" Line 104

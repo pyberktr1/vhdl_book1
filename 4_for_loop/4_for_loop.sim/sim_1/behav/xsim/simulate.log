@@ -1,0 +1,4 @@
+Time resolution is 1 ps
+Failure: test finished!
+Time: 1600 ns  Iteration: 0  Process: /for_loop_sim/stim_proc  File: D:/fpga/kitap1b/4_for_loop/4_for_loop.srcs/sim_1/new/for_loop_sim.vhd
+$finish called at time : 1600 ns : File "D:/fpga/kitap1b/4_for_loop/4_for_loop.srcs/sim_1/new/for_loop_sim.vhd" Line 72

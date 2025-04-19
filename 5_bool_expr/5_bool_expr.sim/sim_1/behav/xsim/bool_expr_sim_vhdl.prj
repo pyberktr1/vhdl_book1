@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../5_bool_expr.srcs/sources_1/new/bool_expr.vhd" \
+"../../../../5_bool_expr.srcs/sim_1/new/bool_expr_sim.vhd" \
+
+# Do not sort compile order
+nosort

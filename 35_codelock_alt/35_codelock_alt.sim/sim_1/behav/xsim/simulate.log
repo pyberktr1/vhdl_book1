@@ -1,0 +1,4 @@
+Time resolution is 1 ps
+Failure: test finished!
+Time: 340 ns  Iteration: 0  Process: /codelock_alt_sim/stim_proc  File: D:/fpga/kitap1b/35_codelock_alt/35_codelock_alt.srcs/sim_1/new/codelock_alt_sim.vhd
+$finish called at time : 340 ns : File "D:/fpga/kitap1b/35_codelock_alt/35_codelock_alt.srcs/sim_1/new/codelock_alt_sim.vhd" Line 153

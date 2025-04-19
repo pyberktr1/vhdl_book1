@@ -1,0 +1,5 @@
+Time resolution is 1 ps
+Failure: test finished!
+Time: 1365353154 ns  Iteration: 0  Process: /echo_inf_sim/stim_proc  File: D:/fpga/kitap1b/40_echo_inf/40_echo_inf.srcs/sim_1/new/echo_inf_sim.vhd
+$finish called at time : 1365353154 ns : File "D:/fpga/kitap1b/40_echo_inf/40_echo_inf.srcs/sim_1/new/echo_inf_sim.vhd" Line 152
+INFO: xsimkernel Simulation Memory Usage: 22480 KB (Peak: 22480 KB), Simulation CPU Usage: 13546 ms

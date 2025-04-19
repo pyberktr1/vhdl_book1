@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Mon Feb 10 15:26:05 2025
+# Process ID: 23792
+# Current directory: D:/fpga/kitap1b/6_reservoir/6_reservoir.runs/impl_1
+# Command line: vivado.exe -log reservoir.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source reservoir.tcl -notrace
+# Log file: D:/fpga/kitap1b/6_reservoir/6_reservoir.runs/impl_1/reservoir.vdi
+# Journal file: D:/fpga/kitap1b/6_reservoir/6_reservoir.runs/impl_1\vivado.jou
+# Running On: hberkal, OS: Windows, CPU Frequency: 2918 MHz, CPU Physical cores: 14, Host memory: 16893 MB
+#-----------------------------------------------------------
+source reservoir.tcl -notrace

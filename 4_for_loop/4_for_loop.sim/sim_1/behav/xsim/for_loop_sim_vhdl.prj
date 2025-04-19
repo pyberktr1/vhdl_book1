@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../4_for_loop.srcs/sources_1/new/for_loop.vhd" \
+"../../../../4_for_loop.srcs/sim_1/new/for_loop_sim.vhd" \
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/fpga/kitap1b/23_serin_parout/23_serin_parout.srcs/sources_1/new/serin_parout.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'serin_parout'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/fpga/kitap1b/23_serin_parout/23_serin_parout.srcs/sim_1/new/serin_parout_sim.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'serin_parout_sim'

@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Tue Feb 25 17:01:19 2025
+# Process ID: 18752
+# Current directory: D:/fpga/kitap1b/20_JK_FF_wpc/20_JK_FF_wpc.runs/synth_1
+# Command line: vivado.exe -log JK_FF_wpc.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source JK_FF_wpc.tcl
+# Log file: D:/fpga/kitap1b/20_JK_FF_wpc/20_JK_FF_wpc.runs/synth_1/JK_FF_wpc.vds
+# Journal file: D:/fpga/kitap1b/20_JK_FF_wpc/20_JK_FF_wpc.runs/synth_1\vivado.jou
+# Running On: hberkal, OS: Windows, CPU Frequency: 2918 MHz, CPU Physical cores: 14, Host memory: 16893 MB
+#-----------------------------------------------------------
+source JK_FF_wpc.tcl -notrace
